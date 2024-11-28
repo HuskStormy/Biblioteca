@@ -147,18 +147,37 @@
             <div class="modal-body">
                 <form>
                     <div class="mb-3">
-                        <label for="titulo" class="form-label">Título</label>
-                        <input type="text" class="form-control" id="titulo" value="Harry Potter">
+                        <label for="titulo" class="form-label">Id</label>
+                        <input type="text" class="form-control" id="titulo" value="" disabled>
                     </div>
                     <div class="mb-3">
-                        <label for="autor" class="form-label">Autor</label>
-                        <input type="text" class="form-control" id="autor" value="J. K. Rowling">
+                        <label for="autor" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="autor" value="">
                     </div>
                     <div class="mb-3">
-                        <label for="isbn" class="form-label">ISBN</label>
-                        <input type="text" class="form-control" id="isbn" value="978-1-2345-6789-0">
+                        <label for="isbn" class="form-label">Estado</label>
+                        <input type="text" class="form-control" id="isbn" value="">
                     </div>
-                    <!-- Agrega más campos según tus necesidades -->
+                    <div class="mb-3">
+                        <label for="isbn" class="form-label">rol</label>
+                        <input type="text" class="form-control" id="isbn" value="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="isbn" class="form-label">CentroReginal</label>
+                        <input type="text" class="form-control" id="isbn" value="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="isbn" class="form-label">Correo</label>
+                        <input type="text" class="form-control" id="isbn" value="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="isbn" class="form-label">contraseña</label>
+                        <input type="text" class="form-control" id="isbn" value="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="isbn" class="form-label">Codigo Primer Ingreso</label>
+                        <input type="text" class="form-control" id="isbn" value="">
+                    </div>
                 </form>
             </div>
             <div class="modal-footer">
