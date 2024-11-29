@@ -36,7 +36,21 @@
     background-color: #ffffff; /* Fondo claro */
 }
 
+.btn_aceptar {
+    background-color: #0077e6; /* Fondo naranja */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 8px 16px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de texto */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de fondo */
+}
 
+/* Efecto al pasar el mouse */
+.btn_aceptar:hover {
+    background-color: #006eff; /* Naranja más oscuro al pasar el mouse */
+}
 
 .btn_editar {
     background-color: #e68900; /* Fondo naranja */
@@ -79,7 +93,8 @@
 
 /* Botón individual sin bordes externos */
 .button-group .btn_editar,
-.button-group .btn_eliminar {
+.button-group .btn_eliminar,
+.button-group .btn_aceptar {
     border-radius: 0; /* Sin esquinas redondeadas dentro del grupo */
     margin: 0; /* Elimina el margen entre botones */
 }

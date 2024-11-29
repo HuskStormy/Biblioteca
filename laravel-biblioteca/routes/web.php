@@ -11,14 +11,14 @@ Route::get('/login',function () {   return view('login.login'); }); ///Ruta del 
 ///     MODULOS     ///////////////////////////////////////////////////////////////////////////////////////////////
 ///Seguridad
 //Usuarios
-Route::get('/table_usuarios',function () {          return view('Modulos.Seguridad.Usuarios.tabla_usuarios'); });
-Route::get('/table_usuariosPendietes',function () { return view('Modulos.Seguridad.Usuarios.tabla_usuariosPendientes'); });
-Route::get('/form_agregarUsuario',function () {     return view('Modulos.Seguridad.Usuarios.form_agregarUsuarios'); });
+Route::get('/table_usuarios',function () {              return view('Modulos.Seguridad.Usuarios.tabla_usuarios'); });
+Route::get('/table_usuariosPendietes',function () {     return view('Modulos.Seguridad.Usuarios.tabla_usuariosPendientes'); });
+Route::get('/form_agregarUsuario',function () {         return view('Modulos.Seguridad.Usuarios.form_agregarUsuarios'); });
 //Seguridad
-Route::get('/table_bitacora',function () {  return view('Modulos.Seguridad.Seguridad.tabla_bitacora'); });
-Route::get('/table_parametros',function () {return view('Modulos.Seguridad.Seguridad.tabla_parametros'); });
-Route::get('/tabla_permisos',function () {  return view('Modulos.Seguridad.Seguridad.tabla_permisos'); });
-Route::get('/tabla_rol',function () {       return view('Modulos.Seguridad.Seguridad.tabla_rol'); });
+Route::get('/table_bitacora',function () {              return view('Modulos.Seguridad.Seguridad.tabla_bitacora'); });
+Route::get('/table_parametros',function () {            return view('Modulos.Seguridad.Seguridad.tabla_parametros'); });
+Route::get('/tabla_permisos',function () {              return view('Modulos.Seguridad.Seguridad.tabla_permisos'); });
+Route::get('/tabla_rol',function () {                   return view('Modulos.Seguridad.Seguridad.tabla_rol'); });
 
 ///inventario
 //Material

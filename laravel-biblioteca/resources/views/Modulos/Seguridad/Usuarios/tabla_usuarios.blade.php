@@ -85,7 +85,7 @@
 
     <!-- Modal para Agregar -->
 <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="editModalLabel">Editar Usuario</h5>
@@ -93,38 +93,108 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="mb-3">
-                            <label for="titulo" class="form-label">Id</label>
-                            <input type="text" class="form-control" id="titulo" value="" disabled>
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="{{asset('dist/img/default-150x150.png')}}" class="img-thumbnail" alt="Cinque Terre" width="150px" height="150px">
+                            </div>
+                            <div class="col-10">
+                                <div class="row">
+                                    <label for="titulo" class="form-label">Datos Personales</label>
+                                    <div class="col-12">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend"> <span class="input-group-text">Nombre</span></div>
+                                            <input type="text" class="form-control" placeholder="Texto">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend"> <span class="input-group-text">Apellido</span></div>
+                                            <input type="text" class="form-control" placeholder="Texto">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend"> <span class="input-group-text">RTN</span></div>
+                                            <input type="text" class="form-control" placeholder="Texto">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <label for="titulo" class="form-label">Datos de Usuario</label>
+                            <div class="col-12">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend"> <span class="input-group-text">Usuario</span></div>
+                                    <input type="text" class="form-control" placeholder="Texto">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend"> <span class="input-group-text">Correo</span></div>
+                                    <input type="text" class="form-control" placeholder="Texto">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend"> <span class="input-group-text">Contraseña</span></div>
+                                    <input type="text" class="form-control" placeholder="Texto">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label for="titulo" class="form-label">Registro</label>
+                            <div class="col-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Estado</span>
+                                    <select class="form-control">
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                    <option>option 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Rol</span>
+                                    <select class="form-control">
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                    <option>option 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend"> <span class="input-group-text">Codigo Primer Ingreso</span></div>
+                                    <input type="text" class="form-control" placeholder="Texto">
+                                </div>
+                            </div>
                         </div>
                         <div class="mb-3">
-                            <label for="autor" class="form-label">Nombre de usuario</label>
-                            <input type="text" class="form-control" id="autor" value="">
+                            <div class="form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Centro Regional</span>
+                                    <select class="form-control">
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                    <option>option 5</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="isbn" class="form-label">Estado</label>
-                            <input type="text" class="form-control" id="isbn" value="">
-                        </div>
-                        <div class="mb-3">
-                            <label for="isbn" class="form-label">rol</label>
-                            <input type="text" class="form-control" id="isbn" value="">
-                        </div>
-                        <div class="mb-3">
-                            <label for="isbn" class="form-label">CentroReginal</label>
-                            <input type="text" class="form-control" id="isbn" value="">
-                        </div>
-                        <div class="mb-3">
-                            <label for="isbn" class="form-label">Correo</label>
-                            <input type="text" class="form-control" id="isbn" value="">
-                        </div>
-                        <div class="mb-3">
-                            <label for="isbn" class="form-label">contraseña</label>
-                            <input type="text" class="form-control" id="isbn" value="">
-                        </div>
-                        <div class="mb-3">
-                            <label for="isbn" class="form-label">Codigo Primer Ingreso</label>
-                            <input type="text" class="form-control" id="isbn" value="">
-                        </div>
+
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -138,7 +208,7 @@
 
     <!-- Modal para Editar -->
 <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="editModalLabel">Editar Registro</h5>
@@ -146,38 +216,114 @@
             </div>
             <div class="modal-body">
                 <form>
-                    <div class="mb-3">
-                        <label for="titulo" class="form-label">Id</label>
-                        <input type="text" class="form-control" id="titulo" value="" disabled>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="{{asset('dist/img/default-150x150.png')}}" class="img-thumbnail" alt="Cinque Terre" width="150px" height="150px">
+                        </div>
+                        <div class="col-10">
+                            <div class="row">
+                                <label for="titulo" class="form-label">Datos Personales</label>
+                                <div class="col-2">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"> <span class="input-group-text">Id</span></div>
+                                        <input type="text" class="form-control" placeholder="Texto" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"> <span class="input-group-text">Nombre</span></div>
+                                        <input type="text" class="form-control" placeholder="Texto">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"> <span class="input-group-text">Apellido</span></div>
+                                        <input type="text" class="form-control" placeholder="Texto">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"> <span class="input-group-text">RTN</span></div>
+                                        <input type="text" class="form-control" placeholder="Texto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <label for="titulo" class="form-label">Datos de Usuario</label>
+                        <div class="col-12">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend"> <span class="input-group-text">Usuario</span></div>
+                                <input type="text" class="form-control" placeholder="Texto">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend"> <span class="input-group-text">Correo</span></div>
+                                <input type="text" class="form-control" placeholder="Texto">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend"> <span class="input-group-text">Contraseña</span></div>
+                                <input type="text" class="form-control" placeholder="Texto">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="titulo" class="form-label">Registro</label>
+                        <div class="col-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Estado</span>
+                                <select class="form-control">
+                                <option>option 1</option>
+                                <option>option 2</option>
+                                <option>option 3</option>
+                                <option>option 4</option>
+                                <option>option 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Rol</span>
+                                <select class="form-control">
+                                <option>option 1</option>
+                                <option>option 2</option>
+                                <option>option 3</option>
+                                <option>option 4</option>
+                                <option>option 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend"> <span class="input-group-text">Codigo Primer Ingreso</span></div>
+                                <input type="text" class="form-control" placeholder="Texto">
+                            </div>
+                        </div>
                     </div>
                     <div class="mb-3">
-                        <label for="autor" class="form-label">Nombre de usuario</label>
-                        <input type="text" class="form-control" id="autor" value="">
+                        <div class="form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Centro Regional</span>
+                                <select class="form-control">
+                                <option>option 1</option>
+                                <option>option 2</option>
+                                <option>option 3</option>
+                                <option>option 4</option>
+                                <option>option 5</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="isbn" class="form-label">Estado</label>
-                        <input type="text" class="form-control" id="isbn" value="">
-                    </div>
-                    <div class="mb-3">
-                        <label for="isbn" class="form-label">rol</label>
-                        <input type="text" class="form-control" id="isbn" value="">
-                    </div>
-                    <div class="mb-3">
-                        <label for="isbn" class="form-label">CentroReginal</label>
-                        <input type="text" class="form-control" id="isbn" value="">
-                    </div>
-                    <div class="mb-3">
-                        <label for="isbn" class="form-label">Correo</label>
-                        <input type="text" class="form-control" id="isbn" value="">
-                    </div>
-                    <div class="mb-3">
-                        <label for="isbn" class="form-label">contraseña</label>
-                        <input type="text" class="form-control" id="isbn" value="">
-                    </div>
-                    <div class="mb-3">
-                        <label for="isbn" class="form-label">Codigo Primer Ingreso</label>
-                        <input type="text" class="form-control" id="isbn" value="">
-                    </div>
+
                 </form>
             </div>
             <div class="modal-footer">

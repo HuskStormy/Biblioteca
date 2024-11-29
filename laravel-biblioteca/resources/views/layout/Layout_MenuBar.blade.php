@@ -67,8 +67,8 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('table_bitacora')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>premisos</p>
+            <a href="{{url('tabla_permisos')}}" class="nav-link nav_link_tree">
+                <i class="far fa-circle nav-icon"></i> <p>permisos</p>
             </a>
         </li>
         <li class="nav-item">
@@ -77,12 +77,12 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('tabla_permisos')}}" class="nav-link nav_link_tree">
+            <a href="{{url('tabla_rol')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>rol</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('tabla_rol')}}" class="nav-link nav_link_tree">
+            <a href="{{url('table_bitacora')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>Bitacora</p>
             </a>
         </li>
