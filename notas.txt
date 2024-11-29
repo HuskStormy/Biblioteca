@@ -9,7 +9,7 @@ correr el servidor laravel
 
 
 
-Ojala funcione ya 
+Ojala funcione ya....
 
 para iconos:
 	https://fontawesome.com/v4/icons/
