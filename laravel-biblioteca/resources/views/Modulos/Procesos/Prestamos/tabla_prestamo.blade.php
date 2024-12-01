@@ -99,11 +99,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="usuario" class="form-label">Usuario</label>
-                        <input type="text" class="form-control" id="usuario" value="Usuario 1">
+                        <input type="text" class="form-control" id="usuario" value="Usuario 1" disabled>
                     </div>
                     <div class="mb-3">
                         <label for="responsable" class="form-label">Responsable</label>
-                        <input type="text" class="form-control" id="responsable" value="Responsable 1">
+                        <input type="text" class="form-control" id="responsable" value="Responsable 1" disabled>
                     </div>
                     <div class="mb-3">
                         <label for="material" class="form-label">Material</label>
@@ -125,7 +125,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="fecha_prestamo" class="form-label">Fecha de Préstamo</label>
-                        <input type="date" class="form-control" id="fecha_prestamo" value="{{ now()->format('Y-m-d') }}">
+                        <input type="date" class="form-control" id="fecha_prestamo" value="{{ now()->format('Y-m-d') }}" disabled>
                     </div>
                     <div class="mb-3">
                         <label for="fecha_devolucion" class="form-label">Fecha de Devolución</label>

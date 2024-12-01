@@ -14,15 +14,11 @@
                 <label for="titulo" class="form-label">Información del Usuario</label>
                 <div class="col-6">
                     <div class="input-group mb-3">
-                        <div class="input-group-prepend"> <span class="input-group-text">ID Usuario</span></div>
-                        <input type="text" class="form-control" placeholder="Ingrese ID del usuario">
+                        <div class="input-group-prepend"> <span class="input-group-text"> Usuario</span></div>
+                        <input type="text" class="form-control" placeholder="Usuario">
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend"> <span class="input-group-text">Nombre Responsable</span></div>
-                        <input type="text" class="form-control" placeholder="Responsable del préstamo">
-                    </div>
                 </div>
             </div>
 
@@ -31,8 +27,8 @@
                 <label for="titulo" class="form-label">Información del Préstamo</label>
                 <div class="col-6">
                     <div class="input-group mb-3">
-                        <div class="input-group-prepend"> <span class="input-group-text">ID Material</span></div>
-                        <input type="text" class="form-control" placeholder="ID del material a prestar">
+                        <div class="input-group-prepend"> <span class="input-group-text">Material</span></div>
+                        <input type="text" class="form-control" placeholder="Material a prestar">
                     </div>
                 </div>
                 <div class="col-6">
@@ -74,14 +70,6 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Estado</span>
-                        <select class="form-control">
-                            <option>Pendiente</option>
-                            <option>Devuelto</option>
-                            <option>Retrasado</option>
-                        </select>
-                    </div>
                 </div>
             </div>
 

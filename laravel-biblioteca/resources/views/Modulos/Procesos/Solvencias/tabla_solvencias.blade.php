@@ -90,11 +90,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="usuario" class="form-label">Usuario</label>
-                        <input type="text" class="form-control" id="usuario" value="Usuario 1">
+                        <input type="text" class="form-control" id="usuario" value="Usuario 1" disabled>
                     </div>
                     <div class="mb-3">
                         <label for="responsable" class="form-label">Responsable</label>
-                        <input type="text" class="form-control" id="responsable" value="Responsable 1">
+                        <input type="text" class="form-control" id="responsable" value="Responsable 1" disabled>
                     </div>
                     <div class="mb-3">
                         <label for="estado" class="form-label">Estado</label>
@@ -135,5 +135,91 @@
         </div>
     </div>
 </div>
+
+ <!-- Modal para Agregar Solvencia -->
+<div class="modal fade" id="addSolvenciaModal" tabindex="-1" aria-labelledby="addSolvenciaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addSolvenciaModalLabel">Agregar Solvencia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <!-- Sección de Datos de Solvencia -->
+                    <div class="row">
+                        <label for="datosSolvencia" class="form-label">Datos de Solvencia</label>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">ID Usuario</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Ingrese el ID del usuario">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">ID Responsable</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Ingrese el ID del responsable">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Estado</span>
+                                </div>
+                                <select class="form-control">
+                                    <option>Activo</option>
+                                    <option>Inactivo</option>
+                                    <option>Pendiente</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Fecha de Creación</span>
+                                </div>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sección de Detalle de Solvencia -->
+                    <div class="row">
+                        <label for="detalleSolvencia" class="form-label">Detalle de Solvencia</label>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">ID Préstamo Pendiente</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Ingrese el ID del préstamo pendiente">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Observaciones</span>
+                                </div>
+                                <textarea class="form-control" placeholder="Ingrese detalles adicionales"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Agregar Solvencia</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 @endsection

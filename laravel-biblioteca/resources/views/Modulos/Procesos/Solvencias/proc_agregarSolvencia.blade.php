@@ -26,23 +26,6 @@
                 </div>
             </div>
 
-            <!-- Información de Solvencia -->
-            <div class="row">
-                <label for="titulo" class="form-label">Información de la Solvencia</label>
-                <div class="col-6">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend"> <span class="input-group-text">Código de Solvencia</span></div>
-                        <input type="text" class="form-control" placeholder="Código único">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend"> <span class="input-group-text">Fecha de Emisión</span></div>
-                        <input type="date" class="form-control">
-                    </div>
-                </div>
-            </div>
-
             <!-- Información Adicional -->
             <div class="row">
                 <label for="titulo" class="form-label">Información Adicional</label>
@@ -66,13 +49,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend"> <span class="input-group-text">Responsable</span></div>
-                        <input type="text" class="form-control" placeholder="Nombre del responsable">
-                    </div>
-                </div>
-            </div>
+                
 
             <!-- Observaciones -->
             <div class="mb-3">
