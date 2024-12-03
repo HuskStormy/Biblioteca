@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {       return view('index');   });     ///Ruta Index
 Route::get('/index', function () {  return view('index');   });     ///Ruta Index
 Route::get('/login',function () {   return view('login.login'); }); ///Ruta del login
+Route::get('/perfil',function () {  return view('login.perfil'); });
 
 ///     MODULOS     ///////////////////////////////////////////////////////////////////////////////////////////////
 ///Seguridad
