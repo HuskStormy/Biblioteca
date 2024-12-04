@@ -67,6 +67,21 @@
 .btn_editar:hover {
     background-color: #ff9900; /* Naranja más oscuro al pasar el mouse */
 }
+.btn_imprimir {
+    background-color: #00e673; /* Fondo naranja */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 8px 16px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de texto */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de fondo */
+}
+
+/* Efecto al pasar el mouse */
+.btn_imprimir:hover {
+    background-color: #00ffd9; /* Naranja más oscuro al pasar el mouse */
+}
 .btn_eliminar {
     background-color: #DC4539; /* Fondo naranja */
     color: #fff; /* Texto blanco */

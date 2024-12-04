@@ -55,7 +55,8 @@ Route::get('/proc_agregarCentroRegional',function () {  return view('Modulos.Pro
 
 
 
-
+///pdfs
+Route::get('/pdf-usuarios', function () { $pdf = PDF::loadView('PDFs.pdf_usuarios'); return $pdf->download('usuarios.pdf'); });
 
 
 
@@ -66,3 +67,11 @@ Route::get('/ejemplo_formulario',function () {   return view('ejemplos.formulari
 Route::get('/ejemplo_proceso',function () {   return view('ejemplos.proceso'); });
 
 Route::get('/ukcjkuawjdkuakwd',function () {   return "hola mundo"; });
+
+
+
+Route::get('/pdfprueba', function () {
+    $pdf = PDF::loadView('PDFs.pdf_usuarios');      ///la vista .blade.php
+    return $pdf->stream('hola.pdf');                ///ver el pdf
+    //return $pdf->download('hola.pdf');            ///descargar el pdf ....... por mientras este no lo usaremos
+});

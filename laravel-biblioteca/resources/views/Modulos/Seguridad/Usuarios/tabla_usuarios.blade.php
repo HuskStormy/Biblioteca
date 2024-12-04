@@ -16,6 +16,7 @@
                     <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#addModal">
                         <i class="bi bi-plus-circle">Agregar</i>
                     </button>
+                    <a type="button" class="btn_imprimir" href="{{url('pdf-usuarios')}}"> impirmir </a>
                 </div>
 
                 <div class="card-body">
