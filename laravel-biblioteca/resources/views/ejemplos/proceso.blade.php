@@ -23,10 +23,16 @@
 <div id="section1" class="content-section active">
     <h1>Pantalla 1</h1>
     <p>Contenido de la primera pantalla.</p>
+
+
+
+
 </div>
 <div id="section2" class="content-section">
     <h1>Pantalla 2</h1>
     <p>Contenido de la segunda pantalla.</p>
+
+    
 </div>
 <div id="section3" class="content-section">
     <h1>Pantalla 3</h1>

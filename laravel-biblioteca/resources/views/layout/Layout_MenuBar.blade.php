@@ -20,7 +20,7 @@
 <li class="nav-item">
     <!-- BUTTON principal -->
     <a href="#" class="nav-link nav_link_bar">
-        <i class="fa fa-user nav-icon"></i>
+        <i class="bi bi-people-fill nav-icon"></i>
         <p>
             Usuarios
             <i class="right fas fa-angle-left"></i>
@@ -33,17 +33,17 @@
 
         <li class="nav-item">
             <a href="{{url('table_usuarios')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de Usuarios</p>
+                <i class="bi bi-table"></i> <p>tabla de Usuarios</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_usuariosPendietes')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de ususario pendientes</p>
+                <i class="bi bi-table"></i> <p>tabla de ususario pendientes</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('form_agregarUsuario')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>agregar usuario</p>
+                <i class="bi bi-file-earmark-plus"></i> <p>agregar usuario</p>
             </a>
         </li>
 
@@ -55,7 +55,7 @@
 <li class="nav-item">
     <!-- BUTTON principal -->
     <a href="#" class="nav-link nav_link_bar">
-        <i class="fa fa-user nav-icon"></i>
+        <i class="bi bi-shield-fill-check nav-icon"></i>
         <p>
             Seguridad
             <i class="right fas fa-angle-left"></i>
@@ -67,8 +67,8 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('table_bitacora')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>premisos</p>
+            <a href="{{url('tabla_permisos')}}" class="nav-link nav_link_tree">
+                <i class="far fa-circle nav-icon"></i> <p>permisos</p>
             </a>
         </li>
         <li class="nav-item">
@@ -77,12 +77,12 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('tabla_permisos')}}" class="nav-link nav_link_tree">
+            <a href="{{url('tabla_rol')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>rol</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('tabla_rol')}}" class="nav-link nav_link_tree">
+            <a href="{{url('table_bitacora')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>Bitacora</p>
             </a>
         </li>
@@ -98,7 +98,7 @@
 <li class="nav-item">
     <!-- BUTTON principal -->
     <a href="#" class="nav-link nav_link_bar">
-        <i class="fa fa-user nav-icon"></i>
+        <i class="bi bi-journal-bookmark-fill nav-icon"></i>
         <p>
             Material
             <i class="right fas fa-angle-left"></i>
@@ -137,7 +137,7 @@
 <li class="nav-item">
     <!-- BUTTON principal -->
     <a href="#" class="nav-link nav_link_bar">
-        <i class="fa fa-user nav-icon"></i>
+        <i class="bi bi-journal-album nav-icon"></i>
         <p>
             Sistema de ordenamiento
             <i class="right fas fa-angle-left"></i>
@@ -170,7 +170,7 @@
 <li class="nav-item">
     <!-- BUTTON principal -->
     <a href="#" class="nav-link nav_link_bar">
-        <i class="fa fa-user nav-icon"></i>
+        <i class="bi bi-bookmark-check-fill nav-icon"></i>
         <p>
             destacado
             <i class="right fas fa-angle-left"></i>
@@ -198,7 +198,7 @@
 <li class="nav-item">
     <!-- BUTTON principal -->
     <a href="#" class="nav-link nav_link_bar">
-        <i class="fa fa-user nav-icon"></i>
+        <i class="bi bi-file-earmark-easel-fill nav-icon"></i>
         <p>
             repocitorio
             <i class="right fas fa-angle-left"></i>
@@ -232,7 +232,7 @@
 <li class="nav-item">
     <!-- BUTTON principal -->
     <a href="#" class="nav-link nav_link_bar">
-        <i class="fa fa-user nav-icon"></i>
+        <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
             solvencias
             <i class="right fas fa-angle-left"></i>

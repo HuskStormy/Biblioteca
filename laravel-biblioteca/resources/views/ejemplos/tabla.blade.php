@@ -8,7 +8,7 @@
 
 
     <div class="card-group">
-        <div class="col-10">
+        <div class="col-12">
             <div class="card">
 
                 <div class="card-header d-flex justify-content-between align-items-center">
@@ -165,36 +165,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-2">
-
-
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Verlo por</h4>
-                    <p class="card-text"></p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Libros</li>
-                    <li class="list-group-item">Curriculas</li>
-                    <li class="list-group-item">Periodicos</li>
-                    <li class="list-group-item">Resvistas</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">tablas adicionales</h4>
-                    <p class="card-text"></p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Autor</li>
-                    <li class="list-group-item">Centro Regional</li>
-                    <li class="list-group-item">Material Prestados</li>
-                    <li class="list-group-item">Pendientes</li>
-                </ul>
-            </div>
-
-        </div>
     </div>
 
 
@@ -242,6 +212,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+
                 <form>
                     <div class="mb-3">
                         <label for="titulo" class="form-label">Título</label>
@@ -257,6 +228,7 @@
                     </div>
                     <!-- Agrega más campos según tus necesidades -->
                 </form>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
