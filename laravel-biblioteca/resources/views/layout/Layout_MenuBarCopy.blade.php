@@ -11,13 +11,15 @@
 <!--########################################################################################################################################-->
 
 <!-- CABECERA-->
-<li class="nav-header nav-label">Seguridad</li>
+<li class="nav-header">Seguridad</li>
+
+
 
 
 <!-- BODY-->
 <li class="nav-item">
     <!-- BUTTON principal -->
-    <a href="#" class="nav-link">
+    <a href="#" class="nav-link nav_link_bar">
         <i class="bi bi-people-fill nav-icon"></i>
         <p>
             Usuarios
@@ -29,13 +31,13 @@
     <!-- dentro del button -->
     <ul class="nav nav-treeview">
         <li class="nav-item">
-            <a href="{{url('table_usuarios')}}" class="nav-link nav-tree">
-                <i class="far fa-circle"></i> <p>Gestion de Usuarios</p>
+            <a href="{{url('table_usuarios')}}" class="nav-link nav_link_tree">
+                <i class="bi bi-table"></i> <p>tabla de Usuarios</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('table_usuariosPendietes')}}" class="nav-link nav-tree">
-                <i class="far fa-circle"></i> <p>Gestion de ususario pendientes</p>
+            <a href="{{url('table_usuariosPendietes')}}" class="nav-link nav_link_tree">
+                <i class="bi bi-table"></i> <p>tabla de ususario pendientes</p>
             </a>
         </li>
     </ul>
@@ -58,22 +60,22 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('tabla_permisos')}}" class="nav-link nav-tree">
+            <a href="{{url('tabla_permisos')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>permisos</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('table_parametros')}}" class="nav-link nav-tree">
+            <a href="{{url('table_parametros')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>parametros</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('tabla_rol')}}" class="nav-link nav-tree">
+            <a href="{{url('tabla_rol')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>rol</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('table_bitacora')}}" class="nav-link nav-tree">
+            <a href="{{url('table_bitacora')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>Bitacora</p>
             </a>
         </li>
@@ -83,7 +85,7 @@
 
 
 <!-- CABECERA-->
-<li class="nav-header nav-label">inventario</li>
+<li class="nav-header">inventario</li>
 
 <!-- BODY-->
 <li class="nav-item">
@@ -101,22 +103,22 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('table_material')}}" class="nav-link nav-tree">
+            <a href="{{url('table_material')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>tabla de materiales</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('table_audiovideo')}}" class="nav-link nav-tree">
+            <a href="{{url('table_audiovideo')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>tabla de audiovideo</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('form_agregarMateria')}}" class="nav-link nav-tree">
+            <a href="{{url('form_agregarMateria')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>agregar material</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('form_agregarAudiovideo')}}" class="nav-link nav-tree">
+            <a href="{{url('form_agregarAudiovideo')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>agregar audiovideo</p>
             </a>
         </li>
@@ -140,17 +142,17 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('table_dewey')}}" class="nav-link nav-tree">
+            <a href="{{url('table_dewey')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>dewey</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('table_autores')}}" class="nav-link nav-tree">
+            <a href="{{url('table_autores')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>autores</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('table_cursos')}}" class="nav-link nav-tree">
+            <a href="{{url('table_cursos')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>cursos</p>
             </a>
         </li>
@@ -173,12 +175,12 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('table_destacado')}}" class="nav-link nav-tree">
+            <a href="{{url('table_destacado')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>table de destacado</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('form_agregarDestacado')}}" class="nav-link nav-tree">
+            <a href="{{url('form_agregarDestacado')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>agregar destacado</p>
             </a>
         </li>
@@ -201,12 +203,12 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('table_repocitorioMaterial')}}" class="nav-link nav-tree">
+            <a href="{{url('table_repocitorioMaterial')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>repocitorio de material</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('table_repocitorioAudiovideo')}}" class="nav-link nav-tree">
+            <a href="{{url('table_repocitorioAudiovideo')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>repocitorio de audiovideo</p>
             </a>
         </li>
@@ -217,7 +219,7 @@
 <!--########################################################################################################################################-->
 
 <!-- CABECERA-->
-<li class="nav-header nav-label">Gestiones y procesos</li>
+<li class="nav-header">Gestiones y procesos</li>
 
 <!-- BODY-->
 <li class="nav-item">
@@ -235,12 +237,12 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('table_solvencia')}}" class="nav-link nav-tree">
+            <a href="{{url('table_solvencia')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>tabla de solvencias</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('proc_agregarSolvecia')}}" class="nav-link nav-tree">
+            <a href="{{url('proc_agregarSolvecia')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>generar solvencia</p>
             </a>
         </li>
@@ -263,12 +265,12 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('table_prestamo')}}" class="nav-link nav-tree">
+            <a href="{{url('table_prestamo')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>tabla de prestamos</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('proc_solicitarPrestamo')}}" class="nav-link nav-tree">
+            <a href="{{url('proc_solicitarPrestamo')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>solicitud de prestamos</p>
             </a>
         </li>
@@ -292,12 +294,12 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('table_ficha')}}" class="nav-link nav-tree">
+            <a href="{{url('table_ficha')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>tabla de fichas</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('proc_agregarFicha')}}" class="nav-link nav-tree">
+            <a href="{{url('proc_agregarFicha')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>agregar ficha</p>
             </a>
         </li>
@@ -321,38 +323,14 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('table_CentroRegional')}}" class="nav-link nav-tree">
+            <a href="{{url('table_CentroRegional')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>tabla de centros regionales</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('proc_agregarCentroRegional')}}" class="nav-link nav-tree">
+            <a href="{{url('proc_agregarCentroRegional')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>agregar centro regional</p>
             </a>
         </li>
     </ul>
-</li>
-<!--########################################################################################################################################-->
-<!--########################################################################################################################################-->
-
-<!-- CABECERA-->
-<li class="nav-header nav-label">Mantenimiento</li>
-
-<!-- BODY-->
-<li class="nav-item">
-    <!-- BUTTON principal -->
-    <a href="#" class="nav-link nav_link_bar">
-        <i class="bi bi-clipboard2-check-fill nav-icon"></i>
-        <p>
-            Backup
-            <i class="right fas fa-angle-left"></i>
-        </p>
-    </a>
-    <a href="#" class="nav-link nav_link_bar">
-        <i class="bi bi-clipboard2-check-fill nav-icon"></i>
-        <p>
-            Restore
-            <i class="right fas fa-angle-left"></i>
-        </p>
-    </a>
 </li>

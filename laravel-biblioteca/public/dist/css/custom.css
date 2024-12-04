@@ -1,0 +1,104 @@
+/* custom.css */
+.main-sidebar {
+    background-color: #29AAFE !important; /* Cambia #34495e por el color que desees*/
+}
+.main-sidebar .nav-link {
+    color: #ffffff !important; /* Cambia #ecf0f1 por el color del texto que desees */
+    transition: color 0.3s ease, font-size 0.3s !important;
+}
+.main-sidebar .nav-link:hover {
+    color: #c8e9ff  !important; /* Cambia #ecf0f1 por el color del texto que desees */
+    font-size: 17px !important;
+
+}
+
+.main-sidebar .nav-label {
+    color: #ffffff !important; /* Cambia #ecf0f1 por el color del texto que desees */
+    background-color: #0c8de3 !important;
+    border-radius: 16px 16px 5px 5px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.sidebar .user-text {
+    color: #ffffff !important; /* Cambia #ecf0f1 por el color del texto que desees */
+}
+.sidebar .user-text:hover {
+    color: #c8e9ff  !important; /* Cambia #ecf0f1 por el color del texto que desees */
+}
+
+
+
+.main-sidebar .nav-tree{
+    font-size: 13px !important; /* Cambia #ecf0f1 por el color del texto que desees */
+    color: #ffffff !important;
+    border-radius: 5px 15px 15px 5px !important;
+    transition: font-size 0.3s ease, color 0.3s ease, background-color 0.3s ease !important;
+}
+.main-sidebar .nav-tree:hover{
+    font-size: 14.5px !important; /* Cambia #ecf0f1 por el color del texto que desees */
+    color: #ffffff !important;
+    background-color: #63c1ff;
+
+}
+.main-sidebar .nav-treeview{
+    background-color: #0c6cab !important;
+    border-radius: 5px 15px 15px 5px !important;
+}
+
+
+
+
+
+
+
+
+
+.main-footer {
+    background-color: #0c8de3 !important; /* Cambia #2c3e50 por el color de fondo que desees*/
+    color: #ecf0f1 !important; /* Cambia #ecf0f1 por el color del texto que desees */
+}
+.main-footer a {
+    color: #16a085 !important; /* Cambia #ecdbff por el color de los enlaces que desees*/
+}
+.main-footer a:hover {
+    color: #ffffff !important; /* Cambia #ffffff por el color de los enlaces al pasar el ratón*/
+}
+
+
+.main-header {
+    background-color: #0c8de3 !important; /* Cambia #1abc9c por el color de fondo que desees*/
+    color: #ffffff !important; /* Cambia #ffffff por el color del texto que desees */
+}
+.main-header .navbar-nav .nav-link {
+    color: #ffffff !important; /* Cambia #ffffff por el color de los enlaces*/
+    background-color: transparent !important;
+    border-radius: 20px;
+    transition: background-color 0.4s ease, border-radius 0.4s ease !important;
+}
+.main-header .navbar-nav .nav-link:hover {
+    background-color: #094268 !important; /* Cambia #16a085 por el color de fondo al pasar el ratón */
+    border-radius: 16px;
+    color: #ffffff !important; /* Cambia #ffffff por el color del texto al pasar el ratón */
+}
+
+
+
+.btn-sidebar {
+    position: sticky !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 10px !important; /* Espaciado inferior opcional */
+    background-color: #0a71b6  !important; /* Personaliza el color del botón */
+    color: #fff !important;
+}
+
+.btn-cerrarSesion {
+    position: sticky !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 10px !important; /* Espaciado inferior opcional */
+    background-color: #b60a2f  !important; /* Personaliza el color del botón */
+    color: #fff !important;
+}

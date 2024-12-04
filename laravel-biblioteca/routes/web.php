@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 
+
 ///     Systema     ///////////////////////////////////////////////////////////////////////////////////////////////
 Route::get('/', function () {       return view('index');   });     ///Ruta Index
 Route::get('/index', function () {  return view('index');   });     ///Ruta Index
@@ -56,7 +57,7 @@ Route::get('/proc_agregarCentroRegional',function () {  return view('Modulos.Pro
 
 
 ///pdfs
-Route::get('/pdf-usuarios', function () { $pdf = PDF::loadView('PDFs.pdf_usuarios'); return $pdf->download('usuarios.pdf'); });
+Route::get('/pdf-usuarios', function () { $pdf = PDF::loadView('PDFs.pdf_usuarios'); return $pdf->stream('usuarios.pdf'); });
 
 
 

@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-
+  <link rel="stylesheet" href="{{asset('dist/css/custom.css')}}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{asset('plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Ionicons -->
@@ -75,10 +75,10 @@
                 <!-- botones de enlace -->
                 <!-- botones de enlace -->
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#"id="backButton" class="nav-link nav_link_bar">Volver</a>
+                    <a href="#"id="backButton" class="nav-link ">Volver</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index" class="nav-link nav_link_bar">Home</a>
+                    <a href="index" class="nav-link ">Home</a>
                 </li>
                 <!-- /.botones de enlace -->
                 <!-- /.botones de enlace -->
@@ -107,24 +107,22 @@
         <!-- BARRA LATERAL CONTENIDO -->
         <!-- BARRA LATERAL CONTENIDO -->
         <!-- BARRA LATERAL CONTENIDO -->
-        <aside class="main-sidebar BarraLateral_color elevation-4">
+        <aside class="main-sidebar BarraLateral_color elevation-5">
             <!-- navbar-LOGO -->
             <!-- navbar-LOGO -->
-                <a href="{{url('index')}}" class="brand-link" id="brandLink">
-                    <img src="{{asset('asset/imagenes/Infop_logo.png')}}"  height="90" width="213">
-                </a>
+
             <!-- navbar-LOGO -->
             <!-- navbar-LOGO -->
 
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- USUARIO PERFIL -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex ">
                     <div class="image">
                     <img src="dist/img/user2-160x160.jpg" class="img-rounded elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                    <a href="perfil" class="d-block nav_link_bar">Alexander Pierce</a>
+                    <a href="perfil" class="d-block user-text">Alexander Pierce</a>
                     </div>
                 </div>
                 <!-- /.USUARIO PERFIL -->
@@ -148,8 +146,15 @@
                     @include('layout.Layout_MenuBar')
 
                     </ul>
+
                 </nav>
                 <!-- /.sidebar-menu -->
+            </div>
+            <div>
+                <button class="btn btn-cerrarSesion">
+                    cerrar sesion
+                </button>
+
             </div>
             <!-- /.sidebar -->
         </aside>
@@ -163,7 +168,7 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- CONTENIDO CABECERA -->
-            <div class="content-header elevation-2" style="background-color: rgb(199, 230, 241); border-top: 3px solid #DC4539;">
+            <div class="content-header elevation-1" style="background-color: rgb(199, 230, 241); border-top: 3px solid #DC4539;">
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <!-- TITULO DE LA PAGINA-->
