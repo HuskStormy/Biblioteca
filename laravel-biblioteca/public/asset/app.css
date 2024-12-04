@@ -109,3 +109,15 @@
     border-radius: 0 10px 10px 0; /* Esquinas redondeadas derechas */
 }
 
+
+
+
+
+  .icon-red {
+    color: red;
+  }
+
+  .icon-greed {
+    color: rgb(23, 130, 53);
+  }
+

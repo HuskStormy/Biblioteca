@@ -11,7 +11,7 @@
         <div class="card">
 
             <div class="card-header d-flex justify-content-between align-items-center">
-                <h5 class="card-title mb-0">Usuarios Pendiente a confirmarse</h5>
+                <h5 class="card-title mb-0">Bitacora</h5>
             </div>
 
             <div class="card-body">
@@ -23,7 +23,7 @@
                                 <th>Objeto</th>
                                 <th>Accion</th>
                                 <th>Descripcion</th>
-                                <th>-</th>
+                                <th>fecha</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,16 +33,7 @@
                                 <td>Objeto</td>
                                 <td>Accion</td>
                                 <td>Descripcion</td>
-                                <td>
-                                    <div class="button-group">
-                                        <button type="button" class="btn_aceptar" data-bs-toggle="modal" data-bs-target="#editModal">
-                                            <i class="bi bi-pen-fill">     confirmar  </i>
-                                        </button>
-                                        <button type="button" class="btn_eliminar" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                            <i class="bi bi-trash3-fill">  rechazar </i>
-                                        </button>
-                                    </div>
-                                </td>
+                                <td>fecha</td>
                             </tr>
                         </tbody>
                         <tfoot>
@@ -52,7 +43,7 @@
                                 <th>Objeto</th>
                                 <th>Accion</th>
                                 <th>Descripcion</th>
-                                <th>-</th>
+                                <th>fecha</th>
                             </tr>
                         </tfoot>
                     </table>

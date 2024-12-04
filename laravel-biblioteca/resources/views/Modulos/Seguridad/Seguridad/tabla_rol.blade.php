@@ -14,7 +14,7 @@
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h5 class="card-title mb-0">Roles</h5>
                 <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#addModal">
-                    <i class="bi bi-plus-circle"></i>
+                    <i class="bi bi-plus-circle">Agregar</i>
                 </button>
             </div>
 
@@ -24,22 +24,22 @@
                                 <tr class="align-middle">
                                     <th>n°</th>
                                     <th>Rol</th>
-                                    <th>Descripcion</th>
+                                    <th>Estado</th>
                                     <th>-</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>n°</td>
-                                    <td>rol</td>
-                                    <td>Descripcion</td>
+                                    <td>Rol</td>
+                                    <td>Estado</td>
                                     <td>
                                         <div class="button-group">
                                             <button type="button" class="btn_editar" data-bs-toggle="modal" data-bs-target="#editModal">
                                                 <i class="bi bi-pen-fill">     Editar  </i>
                                             </button>
                                             <button type="button" class="btn_eliminar" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                                <i class="bi bi-trash3-fill">  rechazar </i>
+                                                <i class="bi bi-trash3-fill">  Eliminar </i>
                                             </button>
                                         </div>
                                     </td>
@@ -49,7 +49,7 @@
                                 <tr class="align-middle">
                                     <th>n°</th>
                                     <th>Rol</th>
-                                    <th>Descripcion</th>
+                                    <th>Estado</th>
                                     <th>-</th>
                                 </tr>
                             </tfoot>
@@ -78,10 +78,22 @@
                                 <div class="col-12">
                                     <div class="row">
                                         <label for="titulo" class="form-label">Datos</label>
-                                        <div class="col-12">
+                                        <div class="col-6">
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend"> <span class="input-group-text">Rol</span></div>
                                                 <input type="text" class="form-control" placeholder="Texto">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Estado</span>
+                                                <select class="form-control">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -122,10 +134,22 @@
                             <div class="col-12">
                                 <div class="row">
                                     <label for="titulo" class="form-label">Datos</label>
-                                    <div class="col-12">
+                                    <div class="col-6">
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend"> <span class="input-group-text">Rol</span></div>
                                             <input type="text" class="form-control" placeholder="Texto">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Estado</span>
+                                            <select class="form-control">
+                                            <option>option 1</option>
+                                            <option>option 2</option>
+                                            <option>option 3</option>
+                                            <option>option 4</option>
+                                            <option>option 5</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -148,6 +172,15 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
 
 <!-- Modal para Eliminar -->
 <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">

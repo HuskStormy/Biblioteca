@@ -7,14 +7,14 @@
 
 <!--TABLA-->
 <div class="card-group">
-    <div class="col-2"></div>
-    <div class="col-8">
+
+    <div class="col-12">
         <div class="card">
 
             <div class="card-header d-flex justify-content-between align-items-center">
-                <h5 class="card-title mb-0">Roles</h5>
+                <h5 class="card-title mb-0">Permisos</h5>
                 <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#addModal">
-                    <i class="bi bi-plus-circle"></i>
+                    <i class="bi bi-plus-circle">Agregar</i>
                 </button>
             </div>
 
@@ -23,23 +23,30 @@
                             <thead>
                                 <tr class="align-middle">
                                     <th>n°</th>
-                                    <th>Rol</th>
-                                    <th>Descripcion</th>
+                                    <th>Permiso</th>
+                                    <th>Pantalla</th>
+                                    <th>Guardar</th>
+                                    <th>Modificar</th>
+                                    <th>Eliminar</th>
+                                    <th>Buscar</th>
+                                    <th>Crear</th>
                                     <th>-</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>n°</td>
-                                    <td>rol</td>
-                                    <td>Descripcion</td>
+                                    <td>Permiso</td>
+                                    <td>Pantalla</td>
+                                    <td><i class="bi bi-check-circle-fill icon-greed"></i></td>
+                                    <td><i class="bi bi-check-circle-fill icon-greed"></i></td>
+                                    <td><i class="bi bi-x-circle-fill icon-red"></i></td>
+                                    <td><i class="bi bi-check-circle-fill icon-greed"></i></td>
+                                    <td><i class="bi bi-check-circle-fill icon-greed"></i></td>
                                     <td>
                                         <div class="button-group">
                                             <button type="button" class="btn_editar" data-bs-toggle="modal" data-bs-target="#editModal">
-                                                <i class="bi bi-pen-fill">     Editar  </i>
-                                            </button>
-                                            <button type="button" class="btn_eliminar" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                                <i class="bi bi-trash3-fill">  rechazar </i>
+                                                <i class="bi bi-pen-fill">     Accion  </i>
                                             </button>
                                         </div>
                                     </td>
@@ -48,8 +55,13 @@
                             <tfoot>
                                 <tr class="align-middle">
                                     <th>n°</th>
-                                    <th>Rol</th>
-                                    <th>Descripcion</th>
+                                    <th>Permiso</th>
+                                    <th>Pantalla</th>
+                                    <th>Guardar</th>
+                                    <th>Modificar</th>
+                                    <th>Eliminar</th>
+                                    <th>Buscar</th>
+                                    <th>Crear</th>
                                     <th>-</th>
                                 </tr>
                             </tfoot>
@@ -59,52 +71,6 @@
     </div>
 </div>
 <!--/.TABLA-->
-
-
-
-
-    <!-- Modal para Agregar -->
-    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="editModalLabel">Crear Rol</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="row">
-
-                                <div class="col-12">
-                                    <div class="row">
-                                        <label for="titulo" class="form-label">Datos</label>
-                                        <div class="col-12">
-                                            <div class="input-group mb-3">
-                                                <div class="input-group-prepend"> <span class="input-group-text">Rol</span></div>
-                                                <input type="text" class="form-control" placeholder="Texto">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group mb-3">
-                                                <div class="input-group-prepend"> <span class="input-group-text">Descripcion</span></div>
-                                                <textarea class="form-control" placeholder="agregar una descripcion del rol, sobre si funcion" maxlength="255" rows="5"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary">Agregar</button>
-                    </div>
-                </div>
-            </div>
-    </div>
-
 
 
     <!-- Modal para Editar -->
@@ -119,24 +85,65 @@
                     <form>
                         <div class="row">
 
-                            <div class="col-12">
-                                <div class="row">
-                                    <label for="titulo" class="form-label">Datos</label>
-                                    <div class="col-12">
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend"> <span class="input-group-text">Rol</span></div>
-                                            <input type="text" class="form-control" placeholder="Texto">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend"> <span class="input-group-text">Descripcion</span></div>
-                                            <textarea class="form-control" placeholder="agregar una descripcion del rol, sobre si funcion" maxlength="255" rows="5"></textarea>
-                                        </div>
-                                    </div>
+                            <div class="col-6">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Rol</span>
+                                    <select class="form-control" disabled>
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                    <option>option 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Pantalla</span>
+                                    <select class="form-control" disabled>
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                    <option>option 5</option>
+                                    </select>
                                 </div>
                             </div>
 
+                        </div>
+                        <label for="titulo" class="form-label">Permisos</label>
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                                    <label class="custom-control-label" for="customSwitch1">Guardar</label>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
+                                <label class="custom-control-label" for="customSwitch2">Editar</label>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
+                                <label class="custom-control-label" for="customSwitch3">Crear</label>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                                <label class="custom-control-label" for="customSwitch4">Eliminar</label>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="custom-control custom-switch">
+                                  <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
+                                  <label class="custom-control-label" for="customSwitch3">Buscar</label>
+                                </div>
+                              </div>
                         </div>
 
                     </form>

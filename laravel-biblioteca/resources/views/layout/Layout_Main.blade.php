@@ -16,6 +16,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{asset('plugins/fontawesome-free/css/all.min.css')}}">
@@ -278,9 +280,19 @@
                     "info": true,
                     "autoWidth": false,
                     "responsive": true,
+                    "language": {
+                        "search":"Buscar",
+                        "lengthMenu":"Mostrar _MENU_ registros por página",
+                        "info":"Mostrando página _PAGE_ de_PAGES_",
+                        "paginate":{
+                                "previous": "Anterior",
+                                "next": "Sigueinte",
+                                "first": "Primero",
+                                "last": "Último"
+                            }
+                        }
                 });
             });
-
             document.addEventListener('DOMContentLoaded', function () {
             const backButton = document.getElementById('backButton');
             if (window.location.pathname === '/index' || window.location.pathname === '/' ) {
