@@ -8,7 +8,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {       return view('index');   });     ///Ruta Index
 Route::get('/index', function () {  return view('index');   });     ///Ruta Index
 Route::get('/login',function () {   return view('login.login'); }); ///Ruta del login
+Route::get('/Validacion',function () {   return view('login.validacion'); }); ///Ruta del login
 Route::get('/perfil',function () {  return view('login.perfil'); });
+
+Route::get('/restore',function () {   return view('login.restore'); }); ///Ruta del login
+Route::get('/backup',function () {   return view('login.backup'); }); ///Ruta del login
 
 ///     MODULOS     ///////////////////////////////////////////////////////////////////////////////////////////////
 ///Seguridad

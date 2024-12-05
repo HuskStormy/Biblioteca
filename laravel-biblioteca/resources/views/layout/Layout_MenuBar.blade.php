@@ -341,18 +341,16 @@
 <!-- BODY-->
 <li class="nav-item">
     <!-- BUTTON principal -->
-    <a href="#" class="nav-link nav_link_bar">
+    <a href="backup" class="nav-link nav_link_bar">
         <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
             Backup
-            <i class="right fas fa-angle-left"></i>
         </p>
     </a>
-    <a href="#" class="nav-link nav_link_bar">
+    <a href="restore" class="nav-link nav_link_bar">
         <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
             Restore
-            <i class="right fas fa-angle-left"></i>
         </p>
     </a>
 </li>
