@@ -12,6 +12,12 @@
 
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h5 class="card-title mb-0">Bitacora</h5>
+                <!-- Botones alineados al lado derecho -->
+                <div class="d-flex gap-2 ms-auto">
+                    <a type="button" class="btn btn-secondary btn_imprimir" href="{{url('pdf-bitacora')}}">
+                    <i class="bi bi-printer"></i> Imprimir
+                    </a>
+                </div>
             </div>
 
             <div class="card-body">

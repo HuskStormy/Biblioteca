@@ -336,7 +336,7 @@
 <!--########################################################################################################################################-->
 
 <!-- CABECERA-->
-<li class="nav-header nav-label">Mantenimiento</li>
+<li class="nav-header nav-label">Base de datos</li>
 
 <!-- BODY-->
 <li class="nav-item">

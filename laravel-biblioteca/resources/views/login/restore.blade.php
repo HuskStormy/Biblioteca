@@ -1,7 +1,7 @@
 @extends('layout.Layout_Main')
 
 @section('TITULO_PAGINA', 'Restaurar Base de Datos')
-@section('PAG_GRUPO', 'Seguridad')
+@section('PAG_GRUPO', 'Base de datos')
 @section('content')
 
 <div class="container mt-4">

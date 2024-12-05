@@ -62,6 +62,8 @@ Route::get('/proc_agregarCentroRegional',function () {  return view('Modulos.Pro
 
 ///pdfs
 Route::get('/pdf-usuarios', function () { $pdf = PDF::loadView('PDFs.pdf_usuarios'); return $pdf->stream('usuarios.pdf'); });
+Route::get('/pdf-bitacora', function () { $pdf = PDF::loadView('PDFs.pdf_bitacora'); return $pdf->stream('bitacora.pdf'); });
+
 
 
 

@@ -1,7 +1,7 @@
 @extends('layout.Layout_Main')
 
 @section('TITULO_PAGINA', 'Configuración de Respaldo')
-@section('PAG_GRUPO', 'Base de Datos')
+@section('PAG_GRUPO', 'Base de datos')
 @section('content')
 
 <div class="container mt-4">
