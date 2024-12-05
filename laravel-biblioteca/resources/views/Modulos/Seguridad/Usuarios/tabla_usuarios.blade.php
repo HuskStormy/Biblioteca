@@ -12,7 +12,7 @@
             <div class="card">
 
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title mb-0">Listado de Préstamos</h5>
+                    <h5 class="card-title mb-0">Listado de Usuarios</h5>
 
                     <!-- Botones alineados al lado derecho -->
                     <div class="d-flex gap-2 ms-auto">

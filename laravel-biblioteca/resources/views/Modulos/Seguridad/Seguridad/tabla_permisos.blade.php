@@ -5,6 +5,28 @@
 @section('content')
 
 
+
+
+<div class="row">
+    <div class="col-6">
+        <div class="input-group">
+            <span class="input-group-text">Rol</span>
+            <select class="form-control">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+                <option value="5">Option 5</option>
+            </select>
+            <div class="input-group-append">
+                <a type="button" class="btn btn-secondary" href="#"> Aplicar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<div class="row">
 <!--TABLA-->
 <div class="card-group">
 
@@ -13,9 +35,15 @@
 
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h5 class="card-title mb-0">Permisos</h5>
-                <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#addModal">
-                    <i class="bi bi-plus-circle">Agregar</i>
-                </button>
+
+                    <!-- Botones alineados al lado derecho -->
+                    <div class="d-flex gap-2 ms-auto">
+
+                        <!-- Botón Imprimir -->
+                        <a type="button" class="btn btn-secondary btn_imprimir" href="{{url('pdf-usuarios')}}">
+                            <i class="bi bi-printer"></i> Imprimir
+                        </a>
+                    </div>
             </div>
 
             <div class="card-body">
@@ -71,7 +99,7 @@
     </div>
 </div>
 <!--/.TABLA-->
-
+</div>
 
     <!-- Modal para Editar -->
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">

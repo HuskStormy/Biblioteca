@@ -35,7 +35,7 @@
         </li>
         <li class="nav-item">
             <a href="{{url('table_usuariosPendietes')}}" class="nav-link nav-tree">
-                <i class="far fa-circle"></i> <p>Gestion de ususario pendientes</p>
+                <i class="far fa-circle"></i> <p>Gestion de ususario pendientes</p> <span class="badge badge-info ml-auto">6</span>
             </a>
         </li>
     </ul>
