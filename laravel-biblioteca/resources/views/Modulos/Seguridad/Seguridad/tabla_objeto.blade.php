@@ -50,7 +50,7 @@
                                             <i class="bi bi-pen-fill">     Editar  </i>
                                         </button>
                                         <button type="button" class="btn_eliminar" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                            <i class="bi bi-trash3-fill">  rechazar </i>
+                                            <i class="bi bi-trash3-fill">  Eliminar </i>
                                         </button>
                                     </div>
                                 </td>
@@ -90,7 +90,7 @@
 
                                 <div class="col-12">
                                     <div class="row">
-                                        <label for="titulo" class="form-label">Parametro</label>
+                                        <label for="titulo" class="form-label">Objeto</label>
                                         <div class="col-6">
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend"> <span class="input-group-text">Nombre</span></div>
@@ -140,7 +140,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editModalLabel">Editar parametro</h5>
+                    <h5 class="modal-title" id="editModalLabel">Editar Objeto</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -149,7 +149,7 @@
 
                             <div class="col-12">
                                 <div class="row">
-                                    <label for="titulo" class="form-label">Parametro</label>
+                                    <label for="titulo" class="form-label">Objeto</label>
                                     <div class="col-6">
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend"> <span class="input-group-text">Nombre</span></div>
@@ -197,7 +197,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="deleteModalLabel">Eliminar parametro</h5>
+                <h5 class="modal-title" id="deleteModalLabel">Eliminar Objeto</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
