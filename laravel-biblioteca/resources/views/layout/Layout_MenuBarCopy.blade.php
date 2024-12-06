@@ -324,7 +324,7 @@
 
         <li class="nav-item">
             <a href="{{url('table_CentroRegional')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de centros regionales</p>
+                <i class="far fa-circle nav-icon"></i> <p>Centros regionales</p>
             </a>
         </li>
         <li class="nav-item">

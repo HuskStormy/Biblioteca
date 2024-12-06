@@ -26,3 +26,6 @@ codigo para el github despues de clonar
 	php artisan key:generate
 
 	dang: hola mundo
+
+
+
