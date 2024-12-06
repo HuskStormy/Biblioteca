@@ -25,6 +25,7 @@ Route::get('/table_bitacora',function () {              return view('Modulos.Seg
 Route::get('/table_parametros',function () {            return view('Modulos.Seguridad.Seguridad.tabla_parametros'); });
 Route::get('/tabla_permisos',function () {              return view('Modulos.Seguridad.Seguridad.tabla_permisos'); });
 Route::get('/tabla_rol',function () {                   return view('Modulos.Seguridad.Seguridad.tabla_rol'); });
+Route::get('/tabla_objeto',function () {                return view('Modulos.Seguridad.Seguridad.tabla_objeto'); });
 
 ///inventario
 //Material
