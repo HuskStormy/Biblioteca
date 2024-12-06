@@ -1,0 +1,62 @@
+body {
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    background: none;
+    overflow: hidden; /* Evita barras de desplazamiento si se generan por animación */
+  }
+
+  /* Fondo inicial sin desenfoque */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('{{ asset('asset/imagenes/biblioteca.jpg') }}') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(0); /* Sin desenfoque al inicio */
+    animation: blurEffect 3s ease-in-out forwards; /* Animación de desenfoque */
+    z-index: -1;
+  }
+
+  /* Superposición oscura opcional */
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    animation: fadeOverlay 3s ease-in-out forwards; /* Animación para aparecer lentamente */
+  }
+
+  /* Animación del desenfoque */
+  @keyframes blurEffect {
+    0% {
+      filter: blur(2px); /* Sin desenfoque */
+    }
+    100% {
+      filter: blur(12px); /* Desenfoque final */
+    }
+  }
+
+  /* Animación del overlay (oscurecimiento) */
+  @keyframes fadeOverlay {
+    0% {
+      background: rgba(0, 0, 0, 0); /* Comienza transparente */
+    }
+    100% {
+      background: rgba(0, 0, 0, 0.3); /* Oscurecimiento final */
+    }
+  }
+
+  .content {
+    position: relative;
+    color: white;
+    z-index: 1; /* Asegura que el contenido esté sobre la animación */
+    text-align: center;
+  }

@@ -11,13 +11,15 @@
 <!--########################################################################################################################################-->
 
 <!-- CABECERA-->
-<li class="nav-header nav-label">Seguridad</li>
+<li class="nav-header">Seguridad</li>
+
+
 
 
 <!-- BODY-->
 <li class="nav-item">
     <!-- BUTTON principal -->
-    <a href="#" class="nav-link">
+    <a href="#" class="nav-link nav_link_bar">
         <i class="bi bi-people-fill nav-icon"></i>
         <p>
             Usuarios
@@ -36,11 +38,6 @@
         <li class="nav-item">
             <a href="{{url('table_usuariosPendietes')}}" class="nav-link nav_link_tree">
                 <i class="bi bi-table"></i> <p>tabla de ususario pendientes</p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{url('form_agregarUsuario')}}" class="nav-link nav_link_tree">
-                <i class="bi bi-file-earmark-plus"></i> <p>agregar usuario</p>
             </a>
         </li>
     </ul>
@@ -63,12 +60,12 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('tabla_permisos')}}" class="nav-link nav-tree">
+            <a href="{{url('tabla_permisos')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>permisos</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('table_parametros')}}" class="nav-link nav-tree">
+            <a href="{{url('table_parametros')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>parametros</p>
             </a>
         </li>
@@ -78,7 +75,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('table_bitacora')}}" class="nav-link nav-tree">
+            <a href="{{url('table_bitacora')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>Bitacora</p>
             </a>
         </li>
@@ -88,7 +85,7 @@
 
 
 <!-- CABECERA-->
-<li class="nav-header nav-label">inventario</li>
+<li class="nav-header">inventario</li>
 
 <!-- BODY-->
 <li class="nav-item">
@@ -145,17 +142,17 @@
     <ul class="nav nav-treeview">
 
         <li class="nav-item">
-            <a href="{{url('table_dewey')}}" class="nav-link nav-tree">
+            <a href="{{url('table_dewey')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>dewey</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('table_autores')}}" class="nav-link nav-tree">
+            <a href="{{url('table_autores')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>autores</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{url('table_cursos')}}" class="nav-link nav-tree">
+            <a href="{{url('table_cursos')}}" class="nav-link nav_link_tree">
                 <i class="far fa-circle nav-icon"></i> <p>cursos</p>
             </a>
         </li>
@@ -168,7 +165,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="bi bi-bookmark-check-fill nav-icon"></i>
         <p>
-            Destacado
+            destacado
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -196,7 +193,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="bi bi-file-earmark-easel-fill nav-icon"></i>
         <p>
-            Repositorio
+            repocitorio
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -222,7 +219,7 @@
 <!--########################################################################################################################################-->
 
 <!-- CABECERA-->
-<li class="nav-header nav-label">Gestiones y procesos</li>
+<li class="nav-header">Gestiones y procesos</li>
 
 <!-- BODY-->
 <li class="nav-item">
@@ -230,7 +227,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
-            Solvencias
+            solvencias
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -258,7 +255,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="fa fa-user nav-icon"></i>
         <p>
-            Prestamos
+            prestamos
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -287,7 +284,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="fa fa-user nav-icon"></i>
         <p>
-            Ficha de ingreso
+            ficha de ingreso
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -336,26 +333,4 @@
             </a>
         </li>
     </ul>
-</li>
-<!--########################################################################################################################################-->
-<!--########################################################################################################################################-->
-
-<!-- CABECERA-->
-<li class="nav-header nav-label">Base de datos</li>
-
-<!-- BODY-->
-<li class="nav-item">
-    <!-- BUTTON principal -->
-    <a href="backup" class="nav-link nav_link_bar">
-        <i class="bi bi-clipboard2-check-fill nav-icon"></i>
-        <p>
-            Backup
-        </p>
-    </a>
-    <a href="restore" class="nav-link nav_link_bar">
-        <i class="bi bi-clipboard2-check-fill nav-icon"></i>
-        <p>
-            Restore
-        </p>
-    </a>
 </li>
