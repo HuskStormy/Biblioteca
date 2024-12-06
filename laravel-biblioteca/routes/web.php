@@ -3,12 +3,15 @@
 use Illuminate\Support\Facades\Route;
 
 
-
 ///     Systema     ///////////////////////////////////////////////////////////////////////////////////////////////
 Route::get('/', function () {       return view('index');   });     ///Ruta Index
 Route::get('/index', function () {  return view('index');   });     ///Ruta Index
 Route::get('/login',function () {   return view('login.login'); }); ///Ruta del login
+Route::get('/Validacion',function () {   return view('login.validacion'); }); ///Ruta del login
 Route::get('/perfil',function () {  return view('login.perfil'); });
+
+Route::get('/restore',function () {   return view('login.restore'); }); ///Ruta del login
+Route::get('/backup',function () {   return view('login.backup'); }); ///Ruta del login
 
 ///     MODULOS     ///////////////////////////////////////////////////////////////////////////////////////////////
 ///Seguridad
@@ -21,6 +24,7 @@ Route::get('/table_bitacora',function () {              return view('Modulos.Seg
 Route::get('/table_parametros',function () {            return view('Modulos.Seguridad.Seguridad.tabla_parametros'); });
 Route::get('/tabla_permisos',function () {              return view('Modulos.Seguridad.Seguridad.tabla_permisos'); });
 Route::get('/tabla_rol',function () {                   return view('Modulos.Seguridad.Seguridad.tabla_rol'); });
+Route::get('/tabla_objeto',function () {                return view('Modulos.Seguridad.Seguridad.tabla_objeto'); });
 
 ///inventario
 //Material
@@ -54,10 +58,16 @@ Route::get('/proc_agregarFicha',function () {           return view('Modulos.Pro
 Route::get('/table_CentroRegional',function () {        return view('Modulos.Procesos.Centro Regional.tabla_centroRegional'); });
 Route::get('/proc_agregarCentroRegional',function () {  return view('Modulos.Procesos.Centro Regional.proc_agregarCentroRegional'); });
 
+Route::get('/mnt-seguridad',function () {  return view('Modulos.matenimiento.mtn-seguridad'); });
+Route::get('/mnt-inv',function () {  return view('Modulos.matenimiento.mtn-inventario'); });
+Route::get('/mnt-ProcGest',function () {  return view('Modulos.matenimiento.mtn-ProcGest'); });
+
 
 
 ///pdfs
 Route::get('/pdf-usuarios', function () { $pdf = PDF::loadView('PDFs.pdf_usuarios'); return $pdf->stream('usuarios.pdf'); });
+Route::get('/pdf-bitacora', function () { $pdf = PDF::loadView('PDFs.pdf_bitacora'); return $pdf->stream('bitacora.pdf'); });
+
 
 
 

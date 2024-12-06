@@ -1,6 +1,6 @@
 /* custom.css */
 .main-sidebar {
-    background-color: #29AAFE !important; /* Cambia #34495e por el color que desees*/
+    background-color: #24a7ff !important; /* Cambia #34495e por el color que desees*/
 }
 .main-sidebar .nav-link {
     color: #ffffff !important; /* Cambia #ecf0f1 por el color del texto que desees */
@@ -41,13 +41,15 @@
 
 }
 .main-sidebar .nav-treeview{
-    background-color: #0c6cab !important;
+    background-color: #147fc6 !important;
     border-radius: 5px 15px 15px 5px !important;
 }
 
 
 
-
+.main-sidebar .badge-info{
+    font-size: 18px !important;
+}
 
 
 

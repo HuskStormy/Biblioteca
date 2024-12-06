@@ -122,14 +122,14 @@
                     <img src="dist/img/user2-160x160.jpg" class="img-rounded elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                    <a href="perfil" class="d-block user-text">Alexander Pierce</a>
+                    <a href="perfil" class="d-block user-text">Nombre de Usuario</a>
                     </div>
                 </div>
                 <!-- /.USUARIO PERFIL -->
                 <!-- BUSCADOR -->
                 <div class="form-inline">
                     <div class="input-group" data-widget="sidebar-search">
-                    <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control form-control-sidebar" type="search" placeholder="Buscar" aria-label="Buscar">
                     <div class="input-group-append">
                         <button class="btn btn-sidebar">
                         <i class="fas fa-search fa-fw"></i>
@@ -140,7 +140,7 @@
                 <!-- /.BUSCADOR -->
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="true">
                     <!-- Add icons to the links using the .nav-icon class
                         with font-awesome or any other icon font library -->
                     @include('layout.Layout_MenuBar')
@@ -151,9 +151,9 @@
                 <!-- /.sidebar-menu -->
             </div>
             <div>
-                <button class="btn btn-cerrarSesion">
+                <a class="btn btn-cerrarSesion" href="{{url('login')}}">
                     cerrar sesion
-                </button>
+                </a>
 
             </div>
             <!-- /.sidebar -->
@@ -278,6 +278,116 @@
             }
             $(function () {
                 $('#example2').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": true,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                    "language": {
+                        "search":"Buscar",
+                        "lengthMenu":"Mostrar _MENU_ registros por página",
+                        "info":"Mostrando página _PAGE_ de_PAGES_",
+                        "paginate":{
+                                "previous": "Anterior",
+                                "next": "Sigueinte",
+                                "first": "Primero",
+                                "last": "Último"
+                            }
+                        }
+                });
+            });
+            $(function () {
+                $('#example3').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": true,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                    "language": {
+                        "search":"Buscar",
+                        "lengthMenu":"Mostrar _MENU_ registros por página",
+                        "info":"Mostrando página _PAGE_ de_PAGES_",
+                        "paginate":{
+                                "previous": "Anterior",
+                                "next": "Sigueinte",
+                                "first": "Primero",
+                                "last": "Último"
+                            }
+                        }
+                });
+            });
+            $(function () {
+                $('#example4').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": true,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                    "language": {
+                        "search":"Buscar",
+                        "lengthMenu":"Mostrar _MENU_ registros por página",
+                        "info":"Mostrando página _PAGE_ de_PAGES_",
+                        "paginate":{
+                                "previous": "Anterior",
+                                "next": "Sigueinte",
+                                "first": "Primero",
+                                "last": "Último"
+                            }
+                        }
+                });
+            });
+            $(function () {
+                $('#example5').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": true,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                    "language": {
+                        "search":"Buscar",
+                        "lengthMenu":"Mostrar _MENU_ registros por página",
+                        "info":"Mostrando página _PAGE_ de_PAGES_",
+                        "paginate":{
+                                "previous": "Anterior",
+                                "next": "Sigueinte",
+                                "first": "Primero",
+                                "last": "Último"
+                            }
+                        }
+                });
+            });
+            $(function () {
+                $('#example6').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": true,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                    "language": {
+                        "search":"Buscar",
+                        "lengthMenu":"Mostrar _MENU_ registros por página",
+                        "info":"Mostrando página _PAGE_ de_PAGES_",
+                        "paginate":{
+                                "previous": "Anterior",
+                                "next": "Sigueinte",
+                                "first": "Primero",
+                                "last": "Último"
+                            }
+                        }
+                });
+            });
+            $(function () {
+                $('#example7').DataTable({
                     "paging": true,
                     "lengthChange": false,
                     "searching": true,

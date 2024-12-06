@@ -11,7 +11,7 @@
         <div class="card">
 
             <div class="card-header d-flex justify-content-between align-items-center">
-                <h5 class="card-title mb-0">Parametros</h5>
+                <h5 class="card-title mb-0">Objeto</h5>
 
                     <!-- Botones alineados al lado derecho -->
                     <div class="d-flex gap-2 ms-auto">
@@ -32,22 +32,18 @@
                         <thead>
                             <tr class="align-middle">
                                 <th>n°</th>
-                                <th>Nombre del Parametro</th>
-                                <th>Valor</th>
-                                <th>Usuario creador</th>
-                                <th>Fecha Creacion</th>
-                                <th>Fecha Modificacion</th>
+                                <th>Objeto</th>
+                                <th>tipo</th>
+                                <th>descripcion</th>
                                 <th>-</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>n°</td>
-                                <td>Nombre del Parametro</td>
-                                <td>Valor</td>
-                                <td>Usuario creador</td>
-                                <td>Fecha Creacion</td>
-                                <td>Fecha Modificacion</td>
+                                <td>Objeto</td>
+                                <td>tipo</td>
+                                <td>descripcion</td>
                                 <td>
                                     <div class="button-group">
                                         <button type="button" class="btn_editar" data-bs-toggle="modal" data-bs-target="#editModal">
@@ -63,11 +59,9 @@
                         <tfoot>
                             <tr class="align-middle">
                                 <th>n°</th>
-                                <th>Nombre del Parametro</th>
-                                <th>Valor</th>
-                                <th>Usuario creador</th>
-                                <th>Fecha Creacion</th>
-                                <th>Fecha Modificacion</th>
+                                <th>Objeto</th>
+                                <th>tipo</th>
+                                <th>descripcion</th>
                                 <th>-</th>
                             </tr>
                         </tfoot>
@@ -87,7 +81,7 @@
         <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="addModal">Crear parametro</h5>
+                        <h5 class="modal-title" id="addModal">Crear Objeto</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -105,17 +99,23 @@
                                         </div>
                                         <div class="col-6">
                                             <div class="input-group mb-3">
-                                                <div class="input-group-prepend"> <span class="input-group-text">valor</span></div>
-                                                <input type="text" class="form-control" placeholder="Texto">
+                                                <span class="input-group-text">Tipo</span>
+                                                <select class="form-control">
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                    <option value="4">Option 4</option>
+                                                    <option value="5">Option 5</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <label for="titulo" class="form-label">Datos</label>
-                                        <div class="col-6">
+                                        <label for="titulo" class="form-label">descripcion</label>
+                                        <div class="col-12">
                                             <div class="input-group mb-3">
-                                                <div class="input-group-prepend"> <span class="input-group-text">Usuario</span></div>
-                                                <input type="text" class="form-control" value="Usuario" disabled>
+                                                <div class="input-group-prepend"> <span class="input-group-text">Descripcion</span></div>
+                                                <textarea class="form-control" placeholder="descripcion" maxlength="255" rows="5"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -158,17 +158,23 @@
                                     </div>
                                     <div class="col-6">
                                         <div class="input-group mb-3">
-                                            <div class="input-group-prepend"> <span class="input-group-text">valor</span></div>
-                                            <input type="text" class="form-control" placeholder="Texto">
+                                            <span class="input-group-text">Tipo</span>
+                                            <select class="form-control">
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                                <option value="5">Option 5</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label for="titulo" class="form-label">Datos</label>
-                                    <div class="col-6">
+                                    <label for="titulo" class="form-label">descripcion</label>
+                                    <div class="col-12">
                                         <div class="input-group mb-3">
-                                            <div class="input-group-prepend"> <span class="input-group-text">Usuario</span></div>
-                                            <input type="text" class="form-control" value="Usuario" disabled>
+                                            <div class="input-group-prepend"> <span class="input-group-text">Descripcion</span></div>
+                                            <textarea class="form-control" placeholder="descripcion" maxlength="255" rows="5"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -195,7 +201,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ¿Estás seguro de que deseas eliminar este parametro? Esta acción no se puede deshacer.
+                ¿Estás seguro de que deseas eliminar este Objeto? Esta acción no se puede deshacer.
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>

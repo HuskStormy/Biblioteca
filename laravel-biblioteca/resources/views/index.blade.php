@@ -4,24 +4,9 @@
 @section('PAG_GRUPO', 'Modulos')
 @section('content')
 
-  
-   
-
-      <h2 >BIENVENIDO BIBLIOTECA VIRTUAL INFOP!!!</h2>
-      
-<p></p>
-<a hrf="URL"> <img src="https://www.quienopina.com/wp-content/uploads/2024/01/INFOP.jpg"/> </a>
-  
-
-  <!-- Texto alternativo -->
-  <p>
- 
-  <a href="https://infopvirtual.com/"> Visita INFOP VIRTUAL</a>
-</p>
-  @endsection
- 
-  
+<h1>Bienvenido!!!</h1>
+<p>agregar luego los enlaces y que se vea presentable</p>
 
 
-
+@endsection
 

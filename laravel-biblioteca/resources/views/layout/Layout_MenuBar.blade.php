@@ -30,12 +30,13 @@
     <ul class="nav nav-treeview">
         <li class="nav-item">
             <a href="{{url('table_usuarios')}}" class="nav-link nav-tree">
-                <i class="far fa-circle"></i> <p>Gestion de Usuarios</p>
+                <i class="bi bi-table"></i> <p>Gestion de Usuarios</p>
             </a>
         </li>
         <li class="nav-item">
+
             <a href="{{url('table_usuariosPendietes')}}" class="nav-link nav-tree">
-                <i class="far fa-circle"></i> <p>Gestion de ususario pendientes</p>
+                <i class="far fa-circle"></i> <p>Gestion de ususario pendientes</p> <span class="badge badge-info ml-auto">6</span>
             </a>
         </li>
     </ul>
@@ -60,6 +61,11 @@
         <li class="nav-item">
             <a href="{{url('tabla_permisos')}}" class="nav-link nav-tree">
                 <i class="far fa-circle nav-icon"></i> <p>permisos</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{url('tabla_objeto')}}" class="nav-link nav-tree">
+                <i class="far fa-circle nav-icon"></i> <p>objeto</p>
             </a>
         </li>
         <li class="nav-item">
@@ -112,10 +118,14 @@
         </li>
         <li class="nav-item">
             <a href="{{url('form_agregarMateria')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Inventario Fisico</p>
+                <i class="far fa-circle nav-icon"></i> <p>agregar material</p>
             </a>
         </li>
-       
+        <li class="nav-item">
+            <a href="{{url('form_agregarAudiovideo')}}" class="nav-link nav-tree">
+                <i class="far fa-circle nav-icon"></i> <p>agregar audiovideo</p>
+            </a>
+        </li>
     </ul>
 </li>
 
@@ -137,17 +147,17 @@
 
         <li class="nav-item">
             <a href="{{url('table_dewey')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>DEWEY</p>
+                <i class="far fa-circle nav-icon"></i> <p>dewey</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_autores')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>AUTORES</p>
+                <i class="far fa-circle nav-icon"></i> <p>autores</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_cursos')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>CURSOS</p>
+                <i class="far fa-circle nav-icon"></i> <p>cursos</p>
             </a>
         </li>
     </ul>
@@ -170,12 +180,12 @@
 
         <li class="nav-item">
             <a href="{{url('table_destacado')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Tu Material Favorito</p>
+                <i class="far fa-circle nav-icon"></i> <p>table de destacado</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('form_agregarDestacado')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Agregar Material Favorito</p>
+                <i class="far fa-circle nav-icon"></i> <p>agregar destacado</p>
             </a>
         </li>
     </ul>
@@ -187,7 +197,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="bi bi-file-earmark-easel-fill nav-icon"></i>
         <p>
-            Repocitorio
+            repocitorio
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -221,7 +231,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
-            solvencias
+            Solvencias
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -232,7 +242,7 @@
 
         <li class="nav-item">
             <a href="{{url('table_solvencia')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Lista de solvencias</p>
+                <i class="far fa-circle nav-icon"></i> <p>tabla de solvencias</p>
             </a>
         </li>
         <li class="nav-item">
@@ -249,7 +259,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="fa fa-user nav-icon"></i>
         <p>
-            Prestamos 
+            prestamos
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -260,7 +270,7 @@
 
         <li class="nav-item">
             <a href="{{url('table_prestamo')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Tabla de prestamos</p>
+                <i class="far fa-circle nav-icon"></i> <p>tabla de prestamos</p>
             </a>
         </li>
         <li class="nav-item">
@@ -289,7 +299,7 @@
 
         <li class="nav-item">
             <a href="{{url('table_ficha')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Tabla de fichas</p>
+                <i class="far fa-circle nav-icon"></i> <p>tabla de fichas</p>
             </a>
         </li>
         <li class="nav-item">
@@ -318,7 +328,7 @@
 
         <li class="nav-item">
             <a href="{{url('table_CentroRegional')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Agregar Centros Regionlaes</p>
+                <i class="far fa-circle nav-icon"></i> <p>tabla de centros regionales</p>
             </a>
         </li>
         <li class="nav-item">
@@ -328,27 +338,77 @@
         </li>
     </ul>
 </li>
+
+
+
+
+
+
+
+
+
+
+
+
 <!--########################################################################################################################################-->
 <!--########################################################################################################################################-->
 
 <!-- CABECERA-->
 <li class="nav-header nav-label">Mantenimiento</li>
 
+<!-- Seguridad-->
+<li class="nav-item">
+    <!-- BUTTON principal -->
+    <a href="mnt-seguridad" class="nav-link nav_link_bar">
+        <i class="bi bi-clipboard2-check-fill nav-icon"></i>
+        <p>
+            Seguridad
+        </p>
+    </a>
+    <!-- /.BUTTON principal -->
+</li>
+<!-- Seguridad-->
+<li class="nav-item">
+    <!-- BUTTON principal -->
+    <a href="mnt-inv" class="nav-link nav_link_bar">
+        <i class="bi bi-clipboard2-check-fill nav-icon"></i>
+        <p>
+            inventario
+        </p>
+    </a>
+    <!-- /.BUTTON principal -->
+</li>
+<!-- Seguridad-->
+<li class="nav-item">
+    <!-- BUTTON principal -->
+    <a href="mnt-ProcGest" class="nav-link nav_link_bar">
+        <i class="bi bi-clipboard2-check-fill nav-icon"></i>
+        <p>
+            Proceso y gestiones
+        </p>
+    </a>
+    <!-- /.BUTTON principal -->
+</li>
+
+<!--########################################################################################################################################-->
+<!--########################################################################################################################################-->
+
+<!-- CABECERA-->
+<li class="nav-header nav-label">Base de datos</li>
+
 <!-- BODY-->
 <li class="nav-item">
     <!-- BUTTON principal -->
-    <a href="#" class="nav-link nav_link_bar">
+    <a href="backup" class="nav-link nav_link_bar">
         <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
             Backup
-            <i class="right fas fa-angle-left"></i>
         </p>
     </a>
-    <a href="#" class="nav-link nav_link_bar">
+    <a href="restore" class="nav-link nav_link_bar">
         <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
             Restore
-            <i class="right fas fa-angle-left"></i>
         </p>
     </a>
 </li>

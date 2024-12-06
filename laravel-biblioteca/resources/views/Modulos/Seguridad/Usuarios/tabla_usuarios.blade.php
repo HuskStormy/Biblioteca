@@ -16,9 +16,8 @@
                     <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#addModal">
                         <i class="bi bi-plus-circle">Agregar</i>
                     </button>
-                    <a type="button" class="btn_imprimir" href="{{url('pdf-usuarios')}}"> imprimir </a>
+                    <a type="button" class="btn_imprimir" href="{{url('pdf-usuarios')}}"> impirmir </a>
                 </div>
-
                 <div class="card-body">
                         <table id="example2" class="table table-bordered table-hover">
                             <thead>
@@ -89,7 +88,7 @@
     <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editModalLabel">Editar Usuario</h5>
+                    <h5 class="modal-title" id="editModalLabel">Crear Usuario</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
