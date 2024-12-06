@@ -173,6 +173,11 @@
                 <i class="far fa-circle nav-icon"></i> <p>table de destacado</p>
             </a>
         </li>
+        <li class="nav-item">
+            <a href="{{url('form_agregarDestacado')}}" class="nav-link nav-tree">
+                <i class="far fa-circle nav-icon"></i> <p>Creacion de Destacado</p>
+            </a>
+        </li>
     </ul>
 </li>
 
