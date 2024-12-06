@@ -12,7 +12,7 @@
             <div class="card">
 
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title mb-0">Listado de Usuarios</h5>
+                    <h5 class="card-title mb-0">Gestion de Usuarios</h5>
 
                     <!-- Botones alineados al lado derecho -->
                     <div class="d-flex gap-2 ms-auto">
@@ -97,7 +97,7 @@
     <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editModalLabel">Editar Usuario</h5>
+                    <h5 class="modal-title" id="editModalLabel">Crear Usuario</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
