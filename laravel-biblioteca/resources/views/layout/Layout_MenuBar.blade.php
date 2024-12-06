@@ -359,32 +359,36 @@
 <!-- Seguridad-->
 <li class="nav-item">
     <!-- BUTTON principal -->
-    <a href="#" class="nav-link nav_link_bar">
+    <a href="mnt-seguridad" class="nav-link nav_link_bar">
         <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
             Seguridad
-            <i class="right fas fa-angle-left"></i>
         </p>
     </a>
     <!-- /.BUTTON principal -->
-
-    <!-- dentro del button -->
-    <ul class="nav nav-treeview">
-
-        <li class="nav-item">
-            <a href="{{url('table_solvencia')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Usuarios</p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{url('proc_agregarSolvecia')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p></p>
-            </a>
-        </li>
-    </ul>
 </li>
-
-
+<!-- Seguridad-->
+<li class="nav-item">
+    <!-- BUTTON principal -->
+    <a href="mnt-inv" class="nav-link nav_link_bar">
+        <i class="bi bi-clipboard2-check-fill nav-icon"></i>
+        <p>
+            inventario
+        </p>
+    </a>
+    <!-- /.BUTTON principal -->
+</li>
+<!-- Seguridad-->
+<li class="nav-item">
+    <!-- BUTTON principal -->
+    <a href="mnt-ProcGest" class="nav-link nav_link_bar">
+        <i class="bi bi-clipboard2-check-fill nav-icon"></i>
+        <p>
+            Proceso y gestiones
+        </p>
+    </a>
+    <!-- /.BUTTON principal -->
+</li>
 
 <!--########################################################################################################################################-->
 <!--########################################################################################################################################-->

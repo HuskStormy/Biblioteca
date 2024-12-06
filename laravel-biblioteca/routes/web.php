@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 
-
 ///     Systema     ///////////////////////////////////////////////////////////////////////////////////////////////
 Route::get('/', function () {       return view('index');   });     ///Ruta Index
 Route::get('/index', function () {  return view('index');   });     ///Ruta Index
@@ -58,6 +57,8 @@ Route::get('/proc_agregarFicha',function () {           return view('Modulos.Pro
 //centroReginal
 Route::get('/table_CentroRegional',function () {        return view('Modulos.Procesos.Centro Regional.tabla_centroRegional'); });
 Route::get('/proc_agregarCentroRegional',function () {  return view('Modulos.Procesos.Centro Regional.proc_agregarCentroRegional'); });
+
+Route::get('/mnt-seguridad',function () {  return view('Modulos.matenimiento.mtn-seguridad'); });
 
 
 

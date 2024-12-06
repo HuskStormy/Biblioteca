@@ -298,6 +298,116 @@
                         }
                 });
             });
+            $(function () {
+                $('#example3').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": true,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                    "language": {
+                        "search":"Buscar",
+                        "lengthMenu":"Mostrar _MENU_ registros por página",
+                        "info":"Mostrando página _PAGE_ de_PAGES_",
+                        "paginate":{
+                                "previous": "Anterior",
+                                "next": "Sigueinte",
+                                "first": "Primero",
+                                "last": "Último"
+                            }
+                        }
+                });
+            });
+            $(function () {
+                $('#example4').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": true,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                    "language": {
+                        "search":"Buscar",
+                        "lengthMenu":"Mostrar _MENU_ registros por página",
+                        "info":"Mostrando página _PAGE_ de_PAGES_",
+                        "paginate":{
+                                "previous": "Anterior",
+                                "next": "Sigueinte",
+                                "first": "Primero",
+                                "last": "Último"
+                            }
+                        }
+                });
+            });
+            $(function () {
+                $('#example5').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": true,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                    "language": {
+                        "search":"Buscar",
+                        "lengthMenu":"Mostrar _MENU_ registros por página",
+                        "info":"Mostrando página _PAGE_ de_PAGES_",
+                        "paginate":{
+                                "previous": "Anterior",
+                                "next": "Sigueinte",
+                                "first": "Primero",
+                                "last": "Último"
+                            }
+                        }
+                });
+            });
+            $(function () {
+                $('#example6').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": true,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                    "language": {
+                        "search":"Buscar",
+                        "lengthMenu":"Mostrar _MENU_ registros por página",
+                        "info":"Mostrando página _PAGE_ de_PAGES_",
+                        "paginate":{
+                                "previous": "Anterior",
+                                "next": "Sigueinte",
+                                "first": "Primero",
+                                "last": "Último"
+                            }
+                        }
+                });
+            });
+            $(function () {
+                $('#example7').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": true,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                    "language": {
+                        "search":"Buscar",
+                        "lengthMenu":"Mostrar _MENU_ registros por página",
+                        "info":"Mostrando página _PAGE_ de_PAGES_",
+                        "paginate":{
+                                "previous": "Anterior",
+                                "next": "Sigueinte",
+                                "first": "Primero",
+                                "last": "Último"
+                            }
+                        }
+                });
+            });
             document.addEventListener('DOMContentLoaded', function () {
             const backButton = document.getElementById('backButton');
             if (window.location.pathname === '/index' || window.location.pathname === '/' ) {
