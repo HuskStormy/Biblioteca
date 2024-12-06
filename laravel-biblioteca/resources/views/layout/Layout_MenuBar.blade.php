@@ -116,16 +116,6 @@
                 <i class="far fa-circle nav-icon"></i> <p>Multimedia </p>
             </a>
         </li>
-        <li class="nav-item">
-            <a href="{{url('form_agregarMateria')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>agregar material</p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{url('form_agregarAudiovideo')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>agregar audiovideo</p>
-            </a>
-        </li>
     </ul>
 </li>
 
@@ -183,11 +173,6 @@
                 <i class="far fa-circle nav-icon"></i> <p>table de destacado</p>
             </a>
         </li>
-        <li class="nav-item">
-            <a href="{{url('form_agregarDestacado')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>agregar destacado</p>
-            </a>
-        </li>
     </ul>
 </li>
 
@@ -228,57 +213,26 @@
 <!-- BODY-->
 <li class="nav-item">
     <!-- BUTTON principal -->
-    <a href="#" class="nav-link nav_link_bar">
+    <a href="{{url('table_solvencia')}}" class="nav-link">
         <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
             Solvencias
-            <i class="right fas fa-angle-left"></i>
         </p>
     </a>
     <!-- /.BUTTON principal -->
 
-    <!-- dentro del button -->
-    <ul class="nav nav-treeview">
-
-        <li class="nav-item">
-            <a href="{{url('table_solvencia')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de solvencias</p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{url('proc_agregarSolvecia')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Generar solvencia</p>
-            </a>
-        </li>
-    </ul>
 </li>
 
 <!-- BODY-->
 <li class="nav-item">
     <!-- BUTTON principal -->
-    <a href="#" class="nav-link nav_link_bar">
+    <a href="{{url('table_prestamo')}}" class="nav-link">
         <i class="fa fa-user nav-icon"></i>
         <p>
             prestamos
-            <i class="right fas fa-angle-left"></i>
         </p>
     </a>
     <!-- /.BUTTON principal -->
-
-    <!-- dentro del button -->
-    <ul class="nav nav-treeview">
-
-        <li class="nav-item">
-            <a href="{{url('table_prestamo')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de prestamos</p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{url('proc_solicitarPrestamo')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Solicitud de prestamos</p>
-            </a>
-        </li>
-    </ul>
 </li>
 
 
@@ -314,29 +268,13 @@
 <!-- BODY-->
 <li class="nav-item">
     <!-- BUTTON principal -->
-    <a href="#" class="nav-link nav_link_bar">
+    <a href="{{url('table_CentroRegional')}}" class="nav-link nav_link_bar">
         <i class="fa fa-user nav-icon"></i>
         <p>
             Centro Regional
-            <i class="right fas fa-angle-left"></i>
         </p>
     </a>
     <!-- /.BUTTON principal -->
-
-    <!-- dentro del button -->
-    <ul class="nav nav-treeview">
-
-        <li class="nav-item">
-            <a href="{{url('table_CentroRegional')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de centros regionales</p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{url('proc_agregarCentroRegional')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Reporte de centro regional</p>
-            </a>
-        </li>
-    </ul>
 </li>
 
 
@@ -399,13 +337,13 @@
 <!-- BODY-->
 <li class="nav-item">
     <!-- BUTTON principal -->
-    <a href="backup" class="nav-link nav_link_bar">
+    <a href="{{url('backup')}}" class="nav-link">
         <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
             Backup
         </p>
     </a>
-    <a href="restore" class="nav-link nav_link_bar">
+    <a href="{{url('restore')}}" class="nav-link">
         <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
             Restore
