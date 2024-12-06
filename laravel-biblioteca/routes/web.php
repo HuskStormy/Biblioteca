@@ -59,6 +59,8 @@ Route::get('/table_CentroRegional',function () {        return view('Modulos.Pro
 Route::get('/proc_agregarCentroRegional',function () {  return view('Modulos.Procesos.Centro Regional.proc_agregarCentroRegional'); });
 
 Route::get('/mnt-seguridad',function () {  return view('Modulos.matenimiento.mtn-seguridad'); });
+Route::get('/mnt-inv',function () {  return view('Modulos.matenimiento.mtn-inventario'); });
+Route::get('/mnt-ProcGest',function () {  return view('Modulos.matenimiento.mtn-ProcGest'); });
 
 
 

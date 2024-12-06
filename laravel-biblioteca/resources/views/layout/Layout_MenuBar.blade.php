@@ -116,16 +116,6 @@
                 <i class="far fa-circle nav-icon"></i> <p>tabla de audiovideo</p>
             </a>
         </li>
-        <li class="nav-item">
-            <a href="{{url('form_agregarMateria')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>agregar material</p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{url('form_agregarAudiovideo')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>agregar audiovideo</p>
-            </a>
-        </li>
     </ul>
 </li>
 
@@ -147,17 +137,17 @@
 
         <li class="nav-item">
             <a href="{{url('table_dewey')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>dewey</p>
+                <i class="far fa-circle nav-icon"></i> <p>Dewey</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_autores')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>autores</p>
+                <i class="far fa-circle nav-icon"></i> <p>Autores</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_cursos')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>cursos</p>
+                <i class="far fa-circle nav-icon"></i> <p>Cursos</p>
             </a>
         </li>
     </ul>
@@ -180,12 +170,12 @@
 
         <li class="nav-item">
             <a href="{{url('table_destacado')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>table de destacado</p>
+                <i class="far fa-circle nav-icon"></i> <p>Destacado</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('form_agregarDestacado')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>agregar destacado</p>
+                <i class="far fa-circle nav-icon"></i> <p>Destacado</p>
             </a>
         </li>
     </ul>
@@ -242,7 +232,7 @@
 
         <li class="nav-item">
             <a href="{{url('table_solvencia')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de solvencias</p>
+                <i class="far fa-circle nav-icon"></i> <p>Solvencias</p>
             </a>
         </li>
         <li class="nav-item">
@@ -270,7 +260,7 @@
 
         <li class="nav-item">
             <a href="{{url('table_prestamo')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de prestamos</p>
+                <i class="far fa-circle nav-icon"></i> <p>Prestamos</p>
             </a>
         </li>
         <li class="nav-item">
@@ -299,7 +289,7 @@
 
         <li class="nav-item">
             <a href="{{url('table_ficha')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de fichas</p>
+                <i class="far fa-circle nav-icon"></i> <p>Fichas Material</p>
             </a>
         </li>
         <li class="nav-item">
@@ -328,7 +318,7 @@
 
         <li class="nav-item">
             <a href="{{url('table_CentroRegional')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de centros regionales</p>
+                <i class="far fa-circle nav-icon"></i> <p>Centros regionales</p>
             </a>
         </li>
         <li class="nav-item">
