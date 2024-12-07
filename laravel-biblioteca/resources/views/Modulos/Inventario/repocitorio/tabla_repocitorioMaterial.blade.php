@@ -6,7 +6,7 @@
 
 
 <div class="row">
-    <!--TABLA-->
+    <!--TABLA DE MATERIAL TIPO-->
     <div class="card-group col-6">
         <div class="card">
 
@@ -32,7 +32,7 @@
                         <thead>
                             <tr class="align-middle">
                                 <th>n°</th>
-                                <th>Tipo de Material</th>
+                                <th>Id Material</th>
                                 <th>Descripcion de material</th>
                                 <th>-</th>
                             </tr>
@@ -40,7 +40,7 @@
                         <tbody>
                             <tr>
                                 <td>n°</td>
-                                <td>Tipo de Material</td>
+                                <td>Id Material</td>
                                 <td>Descripcion de Material</td>
                                 <td>
                                     <div class="button-group">
@@ -48,7 +48,7 @@
                                             <i class="bi bi-pen-fill">     Editar  </i>
                                         </button>
                                         <button type="button" class="btn_eliminar" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                            <i class="bi bi-trash3-fill">  rechazar </i>
+                                            <i class="bi bi-trash3-fill">  Eliminar </i>
                                         </button>
                                     </div>
                                 </td>
@@ -57,7 +57,7 @@
                         <tfoot>
                             <tr class="align-middle">
                                 <th>n°</th>
-                                <th>Tipo de Material</th>
+                                <th>Id Material</th>
                                 <th>Descripcion de Material</th>
                                 <th>-</th>
                             </tr>
@@ -69,12 +69,12 @@
     </div>
     <!--/.TABLA-->
 
-    <!--TABLA-->
+    <!--TABLA MATERIAL ESTADO-->
     <div class="card-group col-6">
             <div class="card">
 
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title mb-0">Tipo Objeto</h5>
+                    <h5 class="card-title mb-0">Estado de Material</h5>
 
                         <!-- Botones alineados al lado derecho -->
                         <div class="d-flex gap-2 ms-auto">
@@ -95,23 +95,23 @@
                             <thead>
                                 <tr class="align-middle">
                                     <th>n°</th>
-                                    <th>Objeto tipo</th>
-                                    <th>descripcion</th>
+                                    <th>Descripcion Meterial</th>
+                                    <th>Observacion</th>
                                     <th>-</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>n°</td>
-                                    <td>Objeto tipo</td>
-                                    <td>descripcion</td>
+                                    <td>Descripcion Meterial</td>
+                                    <td>Observacion</td>
                                     <td>
                                         <div class="button-group">
                                             <button type="button" class="btn_editar" data-bs-toggle="modal" data-bs-target="#editModal">
                                                 <i class="bi bi-pen-fill">     Editar  </i>
                                             </button>
                                             <button type="button" class="btn_eliminar" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                                <i class="bi bi-trash3-fill">  rechazar </i>
+                                                <i class="bi bi-trash3-fill">  Eliminar </i>
                                             </button>
                                         </div>
                                     </td>
@@ -120,8 +120,8 @@
                             <tfoot>
                                 <tr class="align-middle">
                                     <th>n°</th>
-                                    <th>Objeto tipo</th>
-                                    <th>descripcion</th>
+                                    <th>Descripcion Meterial</th>
+                                    <th>Observacion</th>
                                     <th>-</th>
                                 </tr>
                             </tfoot>
@@ -132,8 +132,6 @@
     </div>
     <!--/.TABLA-->
 </div>
-
-
 
 <!-- Modal para Eliminar -->
 <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
@@ -153,6 +151,66 @@
         </div>
     </div>
 </div>
+
+
+
+    <!-- Modal para Editar -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Editar Registro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="titulo" class="form-label"> Descripcion de Material</label>
+                        <input type="text" class="form-control" id="titulo" value="Aqui se edita la descripcion del material">
+                    </div>
+                  
+                    <!-- Agrega más campos según tus necesidades -->
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Modal para Agregar -->
+  <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Editar Registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="titulo" class="form-label">id Matearil</label>
+                            <input type="text" class="form-control" id="titulo" value="102">
+                        </div>
+                        <div class="mb-3">
+                            <label for="autor" class="form-label">Descripcion Material</label>
+                            <input type="text" class="form-control" id="autor" value="aqui se agrega la descipcion del material">
+                        </div>
+                       
+                        <!-- Agrega más campos según tus necesidades -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 @endsection
