@@ -10,36 +10,47 @@
 <body>
     <div class="header">
         <img src="{{public_path().'/asset/imagenes/infop_logo2.png'}}" alt="">
-        <h1>Título del Reporte</h1>
+        <h1>Parametros</h1>
     </div>
 
     <div class="details">
         <p><strong>Creado por:</strong> Nombre del Usuario</p>
         <p><strong>Fecha de creación:</strong> {{ date('d/m/Y') }}</p>
-        <p><strong>Descripción:</strong> Agregar una Descripción</p>
+        <p><strong>Descripción:</strong> agregar una descripcion</p>
     </div>
 
     <table>
         <thead>
             <tr>
-                <th>Encabezado 1</th>
-                <th>Encabezado 22</th>
-                <th>Encabezado 3</th>
+                <th>n°</th>
+                <th>Nombre del Parametro</th>
+                <th>Valor</th>
+                <th>Usuario creador</th>
+                <th>Fecha Creacion</th>
+                <th>Fecha Modificacion</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Dato 1</td>
-                <td>Dato 2</td>
-                <td>Dato 3</td>
-            </tr>
-            <tr>
-                <td>Dato 4</td>
-                <td>Dato 5</td>
-                <td>Dato 6</td>
-            </tr>
+                <td>n°</td>
+                <td>Nombre del Parametro</td>
+                <td>Valor</td>
+                <td>Usuario creador</td>
+                <td>Fecha Creacion</td>
+                <td>Fecha Modificacion</td>
 
+            </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th>n°</th>
+                <th>Nombre del Parametro</th>
+                <th>Valor</th>
+                <th>Usuario creador</th>
+                <th>Fecha Creacion</th>
+                <th>Fecha Modificacion</th>
+            </tr>
+        </tfoot>
     </table>
 
     <script type="text/php">

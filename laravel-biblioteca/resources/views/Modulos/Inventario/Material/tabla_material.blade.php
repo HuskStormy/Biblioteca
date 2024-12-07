@@ -192,7 +192,7 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">tablas adicionales</h4>
+                    <h4 class="card-title">Tablas Adicionales</h4>
                     <p class="card-text"></p>
                 </div>
                 <ul class="list-group list-group-flush">

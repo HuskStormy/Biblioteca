@@ -33,7 +33,7 @@
                             <tr class="align-middle">
                                 <th>n°</th>
                                 <th>Estado Usuario</th>
-                                <th>descripcion</th>
+                                <th>Descripción</th>
                                 <th>-</th>
                             </tr>
                         </thead>
@@ -41,7 +41,7 @@
                             <tr>
                                 <td>n°</td>
                                 <td>Estado Usuario</td>
-                                <td>descripcion</td>
+                                <td> Descripción</td>
                                 <td>
                                     <div class="button-group">
                                         <button type="button" class="btn_editar" data-bs-toggle="modal" data-bs-target="#editModal1">
@@ -58,7 +58,7 @@
                             <tr class="align-middle">
                                 <th>n°</th>
                                 <th>Estado Usuario</th>
-                                <th>descripcion</th>
+                                <th>Descripción</th>
                                 <th>-</th>
                             </tr>
                         </tfoot>
@@ -95,7 +95,7 @@
                                 <tr class="align-middle">
                                     <th>n°</th>
                                     <th>Objeto tipo</th>
-                                    <th>descripcion</th>
+                                    <th>Descripción</th>
                                     <th>-</th>
                                 </tr>
                             </thead>
@@ -103,7 +103,7 @@
                                 <tr>
                                     <td>n°</td>
                                     <td>Objeto tipo</td>
-                                    <td>descripcion</td>
+                                    <td>Descripción</td>
                                     <td>
                                         <div class="button-group">
                                             <button type="button" class="btn_editar" data-bs-toggle="modal" data-bs-target="#editModal2">
@@ -120,7 +120,7 @@
                                 <tr class="align-middle">
                                     <th>n°</th>
                                     <th>Objeto tipo</th>
-                                    <th>descripcion</th>
+                                    <th>Descripción</th>
                                     <th>-</th>
                                 </tr>
                             </tfoot>
@@ -158,7 +158,7 @@
         <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="editModalLabel">Crear Estado de usuario</h5>
+                        <h5 class="modal-title" id="editModalLabel">Crear Estado de Usuario</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -182,7 +182,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="input-group mb-3">
-                                                <div class="input-group-prepend"> <span class="input-group-text">Descripcion</span></div>
+                                                <div class="input-group-prepend"> <span class="input-group-text">Descripción</span></div>
                                                 <textarea class="form-control" placeholder="" maxlength="255" rows="5"></textarea>
                                             </div>
                                         </div>
@@ -206,7 +206,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editModalLabel">Editar Estado de usuario</h5>
+                    <h5 class="modal-title" id="editModalLabel">Editar Estado de Usuario</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -230,7 +230,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="input-group mb-3">
-                                            <div class="input-group-prepend"> <span class="input-group-text">Descripcion</span></div>
+                                            <div class="input-group-prepend"> <span class="input-group-text">Descripción</span></div>
                                             <textarea class="form-control" placeholder="" maxlength="255" rows="5"></textarea>
                                         </div>
                                     </div>
@@ -282,7 +282,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="input-group mb-3">
-                                                <div class="input-group-prepend"> <span class="input-group-text">Descripcion</span></div>
+                                                <div class="input-group-prepend"> <span class="input-group-text">Descripción</span></div>
                                                 <textarea class="form-control" placeholder="" maxlength="255" rows="5"></textarea>
                                             </div>
                                         </div>
