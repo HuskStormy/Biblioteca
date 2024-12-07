@@ -13,10 +13,18 @@
 
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h5 class="card-title mb-0">Usuarios</h5>
-                    <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#addModal">
-                        <i class="bi bi-plus-circle">Agregar</i>
-                    </button>
-                    <a type="button" class="btn_imprimir" href="{{url('pdf-usuarios')}}"> impirmir </a>
+                    <!-- Botones alineados al lado derecho -->
+                    <div class="d-flex gap-2 ms-auto">
+                        <!-- Botón Agregar -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+                            <i class="bi bi-plus-circle"></i> Agregar
+                        </button>
+
+                        <!-- Botón Imprimir -->
+                        <a type="button" class="btn btn-secondary btn_imprimir" href="{{url('pdf-usuarios')}}">
+                            <i class="bi bi-printer"></i> Imprimir
+                        </a>
+                    </div>
                 </div>
                 <div class="card-body">
                         <table id="example2" class="table table-bordered table-hover">
