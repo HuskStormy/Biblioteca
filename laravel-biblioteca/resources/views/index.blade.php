@@ -1,7 +1,7 @@
 @extends('layout.Layout_Main')
 
 @section('TITULO_PAGINA', 'BIBLIOTECA VIRTUAL INFOP 24/7')
-@section('PAG_GRUPO', 'Modulos')
+@section('PAG_GRUPO', '')
 @section('content')
         <!-- Small boxes (Stat box) -->
         <div class="row">
@@ -12,7 +12,7 @@
                   <h3>150</h3>
                   <p>Usuarios</p>
                 </div>
-                <div class="icon"> <i class="ion ion-person-add"></i> </div>
+                <div class="icon"> <i class="bi bi-person-fill"></i> </div>
                 <a href="{{url('/table_usuarios')}}" class="small-box-footer"> Mas Informacion <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
@@ -26,7 +26,7 @@
                   <p>Usuario pendientes</p>
                 </div>
                 <div class="icon">
-                  <i class="ion ion-stats-bars"></i>
+                    <i class="bi bi-people-fill"></i>
                 </div>
                 <a href="{{url('/table_material')}}" class="small-box-footer">Mas Informacion <i class="fas fa-arrow-circle-right"></i></a>
               </div>
@@ -40,7 +40,7 @@
                   <p>Materiales</p>
                 </div>
                 <div class="icon">
-                  <i class="ion ion-person-add"></i>
+                    <i class="bi bi-book-half"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
               </div>
@@ -54,7 +54,7 @@
                   <p>fichas biliograficas</p>
                 </div>
                 <div class="icon">
-                  <i class="ion ion-pie-graph"></i>
+                    <i class="bi bi-journal-text"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
               </div>
@@ -64,4 +64,3 @@
 
 
 @endsection
-
