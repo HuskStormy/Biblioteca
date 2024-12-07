@@ -40,7 +40,7 @@
                     <div class="d-flex gap-2 ms-auto">
 
                         <!-- Botón Imprimir -->
-                        <a type="button" class="btn btn-secondary btn_imprimir" href="{{url('pdf-usuarios')}}">
+                        <a type="button" class="btn btn-secondary btn_imprimir" href="{{url('pdf-permisos')}}">
                             <i class="bi bi-printer"></i> Imprimir
                         </a>
                     </div>
