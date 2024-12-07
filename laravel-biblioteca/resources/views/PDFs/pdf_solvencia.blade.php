@@ -12,7 +12,7 @@
 <body>
     <div class="header">
         <img src="{{public_path().'/asset/imagenes/infop_logo2.png'}}" alt="">
-        <h1>Bitacora de acciones</h1>
+        <h1>Solvencia</h1>
     </div>
 
     <div class="details">
@@ -21,22 +21,6 @@
         <p><strong>Descripción:</strong> agregar una descripcion</p>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     <table>
         <thead>
             <tr>
@@ -69,24 +53,6 @@
             </tr>
         </tfoot>
     </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <script type="text/php">

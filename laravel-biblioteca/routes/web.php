@@ -67,7 +67,7 @@ Route::get('/mnt-ProcGest',function () {  return view('Modulos.matenimiento.mtn-
 ///pdfs
 Route::get('/pdf-usuarios', function () { $pdf = PDF::loadView('PDFs.pdf_usuarios'); return $pdf->stream('usuarios.pdf'); });
 Route::get('/pdf-bitacora', function () { $pdf = PDF::loadView('PDFs.pdf_bitacora'); return $pdf->stream('bitacora.pdf'); });
-
+Route::get('/pdf-solvencias', function () { $pdf = PDF::loadView('PDFs.pdf_solvencia'); return $pdf->stream('solvencia.pdf'); });
 
 
 
