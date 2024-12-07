@@ -43,7 +43,7 @@
                                     <th>ID DEWEY</th>
                                     <th>Nombre</th>
                                     <th>Tipo de Archivo</th>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Id color</th>
                                     <th>Estante</th>
                                     
@@ -84,7 +84,7 @@
                             <th>ID  DEWEY</th>
                             <th>Nombre </th>
                             <th>Tipo archivo</th>
-                            <th>Descripcion</th>
+                            <th>Descripción</th>
                             <th>Id color</th>
                             <th>Estante</th>
                             <th>Acciones</th>
@@ -116,7 +116,7 @@
                         <form>
                             <!-- Datos material multimedia -->
                             <div class="row">
-                                <label for="titulo" class="form-label">material multimedia</label>
+                                <label for="titulo" class="form-label">Material multimedia</label>
                                 <div class="col-6">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
@@ -171,7 +171,7 @@
 
                             <!-- Observaciones -->
                             <div class="mb-3">
-                                <label for="Descripcion" class="form-label">Descripcion</label>
+                                <label for="Descripcion" class="form-label">Descripción</label>
                                 <textarea class="form-control" id="observaciones" rows="3" placeholder="Detalles adicionales o comentarios"></textarea>
                             </div>
 

@@ -9,6 +9,8 @@
 
   <link rel="stylesheet" href="{{ asset('asset/app.css') }}">
 
+  <link rel="shortcut icon" href="{{asset('asset/imagenes/Infop_logo2.png')}}" />
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">

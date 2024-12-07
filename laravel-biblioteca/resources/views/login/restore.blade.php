@@ -22,7 +22,7 @@
       <label for="database" class="col-sm-3 col-form-label">Base de Datos:</label>
       <div class="col-sm-9">
         <select class="form-control" id="database" name="database">
-          <option value="Biblioteca Virual">Biblioteca Virual</option>
+          <option value="Biblioteca Virual">Biblioteca Virtual</option>
           <!-- Agregar más bases de datos si es necesario -->
         </select>
       </div>

@@ -7,40 +7,53 @@
     <title>Reporte</title>
     <link rel="stylesheet" href="asset/pdf.css">
 </head>
+
+
 <body>
     <div class="header">
         <img src="{{public_path().'/asset/imagenes/infop_logo2.png'}}" alt="">
-        <h1>Título del Reporte</h1>
+        <h1>Solvencia</h1>
     </div>
 
     <div class="details">
         <p><strong>Creado por:</strong> Nombre del Usuario</p>
         <p><strong>Fecha de creación:</strong> {{ date('d/m/Y') }}</p>
-        <p><strong>Descripción:</strong> Agregar una Descripción</p>
+        <p><strong>Descripción:</strong> agregar una descripcion</p>
     </div>
 
     <table>
         <thead>
             <tr>
-                <th>Encabezado 1</th>
-                <th>Encabezado 22</th>
-                <th>Encabezado 3</th>
+                <th>#</th>
+                <th>ID de Solvencia</th>
+                <th>Usuario</th>
+                <th>Responsable</th>
+                <th>Estado</th>
+                <th>Fecha de Creación</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Dato 1</td>
-                <td>Dato 2</td>
-                <td>Dato 3</td>
+                <td>1</td>
+                <td>SV-001</td>
+                <td>USR-123</td>
+                <td>Juan Pérez</td>
+                <td>Activo</td>
+                <td>2024-12-01</td>
             </tr>
-            <tr>
-                <td>Dato 4</td>
-                <td>Dato 5</td>
-                <td>Dato 6</td>
-            </tr>
-
         </tbody>
+        <tfoot>
+            <tr>
+                <th>#</th>
+                <th>ID de Solvencia</th>
+                <th>Usuario</th>
+                <th>Responsable</th>
+                <th>Estado</th>
+                <th>Fecha de Creación</th>
+            </tr>
+        </tfoot>
     </table>
+
 
     <script type="text/php">
         if ( isset($pdf) ) {

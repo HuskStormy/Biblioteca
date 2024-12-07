@@ -47,7 +47,7 @@
                                     <th>ID audio y video</th>
                                     <th>Nombre</th>
                                     <th>Tipo de Archivo</th>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Id Dewey</th>
                                     <th>URL</th>
                                     
@@ -87,8 +87,8 @@
                         <tr class="align-middle">
                             <th>ID audio y video</th>
                             <th>ID nombre </th>
-                            <th>tipo archivo</th>
-                            <th>Descripcion</th>
+                            <th>Tipo archivo</th>
+                            <th>Descripción</th>
                             <th>Id Dewey</th>
                             <th>URL</th>
                             <th>Acciones</th>
@@ -120,7 +120,7 @@
                         <form>
                             <!-- Datos material multimedia -->
                             <div class="row">
-                                <label for="titulo" class="form-label">material multimedia</label>
+                                <label for="titulo" class="form-label">Material Multimedia</label>
                                 <div class="col-6">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
@@ -173,13 +173,13 @@
 
                             <!-- Observaciones -->
                             <div class="mb-3">
-                                <label for="Descripcion" class="form-label">Descripcion</label>
+                                <label for="Descripcion" class="form-label">Descripción</label>
                                 <textarea class="form-control" id="observaciones" rows="3" placeholder="Detalles adicionales o comentarios"></textarea>
                             </div>
 
                             <!-- Botón de registro -->
                             <div class="d-flex justify-content-end">
-                                <button type="button" class="btn btn-primary">Registrar material</button>
+                                <button type="button" class="btn btn-primary">Registrar Material</button>
                             </div>
                         </form>
                      
