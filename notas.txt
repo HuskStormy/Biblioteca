@@ -29,3 +29,6 @@ codigo para el github despues de clonar
 
 
 
+Codigo para instalar dompdf
+	composer require barryvdh/laravel-dompdf
+	php artisan vendor:publish --provider="Barryvdh\DomPDF\ServiceProvider"
