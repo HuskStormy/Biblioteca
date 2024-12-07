@@ -12,7 +12,7 @@
 <body>
     <div class="header">
         <img src="{{public_path().'/asset/imagenes/infop_logo2.png'}}" alt="">
-        <h1>Bitacora de acciones</h1>
+        <h1>Prestamo</h1>
     </div>
 
     <div class="details">
@@ -22,66 +22,48 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     <table>
         <thead>
             <tr>
-                <th>n°</th>
-                <th>Usuario</th>
-                <th>Objeto</th>
-                <th>Accion</th>
-                <th>Descripcion</th>
-                <th>fecha</th>
+                <th>#</th>
+                <th>ID Préstamo</th>
+                <th>ID Usuario</th>
+                <th>Responsable</th>
+                <th>Material</th>
+                <th>Tipo de Préstamo</th>
+                <th>Estado</th>
+                <th>Fecha Préstamo</th>
+                <th>Fecha Devolución</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>n°</td>
-                <td>Usuario</td>
-                <td>Objeto</td>
-                <td>Accion</td>
-                <td>Descripcion</td>
-                <td>fecha</td>
+                <td>1</td>
+                <td>PR-001</td>
+                <td>USR-123</td>
+                <td>Juan Pérez</td>
+                <td>Libro de Física</td>
+                <td>Temporal</td>
+                <td>Activo</td>
+                <td>2024-12-01</td>
+                <td>2024-12-15</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>n°</th>
-                <th>Usuario</th>
-                <th>Objeto</th>
-                <th>Accion</th>
-                <th>Descripcion</th>
-                <th>fecha</th>
+                <th>#</th>
+                <th>ID Préstamo</th>
+                <th>ID Usuario</th>
+                <th>Responsable</th>
+                <th>Material</th>
+                <th>Tipo de Préstamo</th>
+                <th>Estado</th>
+                <th>Fecha Préstamo</th>
+                <th>Fecha Devolución</th>
             </tr>
         </tfoot>
     </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

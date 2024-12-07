@@ -1,18 +1,15 @@
 @extends('layout.Layout_Main')
 
-@section('TITULO_PAGINA', 'Gestión de Préstamos')
+@section('TITULO_PAGINA', 'Préstamos')
 @section('PAG_GRUPO', 'Procesos')
 @section('content')
 
-<!-- TABLA -->
+<!--TABLA-->
 <div class="card-group">
     <div class="col-12">
         <div class="card">
-
-            <!-- Encabezado con botones alineados a la derecha -->
             <div class="card-header d-flex justify-content-between align-items-center">
-                <h5 class="card-title mb-0">Listado de Préstamos</h5>
-
+                <h5 class="card-title mb-0">Lista Préstamos</h5>
                 <!-- Botones alineados al lado derecho -->
                 <div class="d-flex gap-2 ms-auto">
                     <!-- Botón Agregar -->
@@ -21,13 +18,11 @@
                     </button>
 
                     <!-- Botón Imprimir -->
-                    <a type="button" class="btn btn-secondary btn_imprimir" href="{{ url('pdf-prestamos') }}">
+                    <a type="button" class="btn btn-secondary btn_imprimir" href="{{url('pdf-prestamos')}}">
                         <i class="bi bi-printer"></i> Imprimir
                     </a>
                 </div>
             </div>
-
-            <!-- Contenido de la tarjeta -->
             <div class="card-body">
                 <table id="example2" class="table table-bordered table-hover">
                     <thead>
@@ -39,42 +34,33 @@
                             <th>Material</th>
                             <th>Tipo de Préstamo</th>
                             <th>Estado</th>
-                            <th>Fecha de Préstamo</th>
-                            <th>Fecha de Devolución</th>
+                            <th>Fecha Préstamo</th>
+                            <th>Fecha Devolución</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Datos de prueba -->
-                        @for ($i = 1; $i <= 5; $i++)
-                            <tr>
-                                <td>{{ $i }}</td>
-                                <td>PREST-{{ 1000 + $i }}</td>
-                                <td>Usuario {{ $i }}</td>
-                                <td>Responsable {{ $i }}</td>
-                                <td>Material {{ $i }}</td>
-                                <td>{{ $i % 2 == 0 ? 'Temporal' : 'Permanente' }}</td>
-                                <td>{{ $i % 2 == 0 ? 'Devuelto' : 'Pendiente' }}</td>
-                                <td>{{ now()->subDays($i)->format('Y-m-d') }}</td>
-                                <td>{{ now()->addDays($i)->format('Y-m-d') }}</td>
-                                <td>
-                                    <div class="button-group">
-                                        <button type="button" class="btn btn-warning btn-sm"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#editModal"
-                                            data-id="PREST-{{ 1000 + $i }}">
-                                            <i class="bi bi-pen-fill"></i> Editar
-                                        </button>
-                                        <button type="button" class="btn btn-danger btn-sm"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#deleteModal"
-                                            data-id="PREST-{{ 1000 + $i }}">
-                                            <i class="bi bi-trash3-fill"></i> Eliminar
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        @endfor
+                        <tr>
+                            <td>1</td>
+                            <td>PR-001</td>
+                            <td>USR-123</td>
+                            <td>Juan Pérez</td>
+                            <td>Libro de Física</td>
+                            <td>Temporal</td>
+                            <td>Activo</td>
+                            <td>2024-12-01</td>
+                            <td>2024-12-15</td>
+                            <td>
+                            <div class="button-group">
+                                            <button type="button" class="btn_editar" data-bs-toggle="modal" data-bs-target="#editModal">
+                                                <i class="bi bi-pen-fill">     Editar   </i>
+                                            </button>
+                                            <button type="button" class="btn_eliminar" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                                <i class="bi bi-trash3-fill">  Eliminar </i>
+                                            </button>
+                                        </div>
+                            </td>
+                        </tr>
                     </tbody>
                     <tfoot>
                         <tr class="align-middle">
@@ -85,8 +71,8 @@
                             <th>Material</th>
                             <th>Tipo de Préstamo</th>
                             <th>Estado</th>
-                            <th>Fecha de Préstamo</th>
-                            <th>Fecha de Devolución</th>
+                            <th>Fecha Préstamo</th>
+                            <th>Fecha Devolución</th>
                             <th>Acciones</th>
                         </tr>
                     </tfoot>
@@ -95,7 +81,7 @@
         </div>
     </div>
 </div>
-<!-- /.TABLA -->
+<!--/.TABLA-->
 
 <!-- Modal para Agregar -->
 <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
@@ -106,208 +92,118 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-2"></div>
-
-                    <div class="col-8">
-                        <form>
-                            <!-- Información del Usuario -->
-                            <div class="row">
-                                <label for="titulo" class="form-label">Información del Usuario</label>
-                                <div class="col-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Usuario</span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Usuario">
-                                    </div>
-                                </div>
-                                <div class="col-6"></div>
+                <form>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">ID Préstamo</span>
+                                <input type="text" class="form-control" placeholder="Ingrese el ID">
                             </div>
-
-                            <!-- Información del Préstamo -->
-                            <div class="row">
-                                <label for="titulo" class="form-label">Información del Préstamo</label>
-                                <div class="col-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Material</span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Material a prestar">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Tipo de Préstamo</span>
-                                        </div>
-                                        <select class="form-control">
-                                            <option>Tipo 1</option>
-                                            <option>Tipo 2</option>
-                                            <option>Tipo 3</option>
-                                        </select>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">ID Usuario</span>
+                                <input type="text" class="form-control" placeholder="Ingrese el ID del Usuario">
                             </div>
-
-                            <!-- Fechas del Préstamo -->
-                            <div class="row">
-                                <label for="titulo" class="form-label">Fechas del Préstamo</label>
-                                <div class="col-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Fecha Préstamo</span>
-                                        </div>
-                                        <input type="date" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Fecha Devolución</span>
-                                        </div>
-                                        <input type="date" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Información Adicional -->
-                            <div class="row">
-                                <label for="titulo" class="form-label">Información Adicional</label>
-                                <div class="col-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Código de Verificación</span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Ingrese el código">
-                                    </div>
-                                </div>
-                                <div class="col-6"></div>
-                            </div>
-
-                            <!-- Observaciones -->
-                            <div class="mb-3">
-                                <label for="observaciones" class="form-label">Observaciones</label>
-                                <textarea class="form-control" id="observaciones" rows="3" placeholder="Detalles o notas adicionales"></textarea>
-                            </div>
-
-                            <!-- Botón de registro -->
-                            <div class="d-flex justify-content-end">
-                                <button type="button" class="btn btn-primary">Registrar Préstamo</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-
-                    <div class="col-2"></div>
-                </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Responsable</span>
+                                <input type="text" class="form-control" placeholder="Ingrese el nombre del responsable">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Material</span>
+                                <input type="text" class="form-control" placeholder="Descripción del material">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Tipo de Préstamo</span>
+                                <select class="form-control">
+                                    <option>Temporal</option>
+                                    <option>Permanente</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Estado</span>
+                                <select class="form-control">
+                                    <option>Activo</option>
+                                    <option>Completado</option>
+                                    <option>Cancelado</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Fecha Préstamo</span>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Fecha Devolución</span>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal para Agregar -->
-<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+<!-- Modal para Editar -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="addModalLabel">Agregar Préstamo</h5>
+                <h5 class="modal-title" id="editModalLabel">Editar Registro</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-2"></div>
-
-                    <div class="col-8">
-                        <form>
-                            <!-- Información del Usuario -->
-                            <div class="row">
-                                <label for="titulo" class="form-label">Información del Usuario</label>
-                                <div class="col-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Usuario</span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Usuario">
-                                    </div>
-                                </div>
-                                <div class="col-6"></div>
-                            </div>
-
-                            <!-- Información del Préstamo -->
-                            <div class="row">
-                                <label for="titulo" class="form-label">Información del Préstamo</label>
-                                <div class="col-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Material</span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Material a prestar">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Tipo de Préstamo</span>
-                                        </div>
-                                        <select class="form-control">
-                                            <option>Tipo 1</option>
-                                            <option>Tipo 2</option>
-                                            <option>Tipo 3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Fechas del Préstamo -->
-                            <div class="row">
-                                <label for="titulo" class="form-label">Fechas del Préstamo</label>
-                                <div class="col-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Fecha Préstamo</span>
-                                        </div>
-                                        <input type="date" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Fecha Devolución</span>
-                                        </div>
-                                        <input type="date" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Información Adicional -->
-                            <div class="row">
-                                <label for="titulo" class="form-label">Información Adicional</label>
-                                <div class="col-6">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Código de Verificación</span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Ingrese el código">
-                                    </div>
-                                </div>
-                                <div class="col-6"></div>
-                            </div>
-
-                            <!-- Observaciones -->
-                            <div class="mb-3">
-                                <label for="observaciones" class="form-label">Observaciones</label>
-                                <textarea class="form-control" id="observaciones" rows="3" placeholder="Detalles o notas adicionales"></textarea>
-                            </div>
-
-                            <!-- Botón de registro -->
-                            <div class="d-flex justify-content-end">
-                                <button type="button" class="btn btn-primary">Registrar Préstamo</button>
-                            </div>
-                        </form>
+                <form>
+                    <!-- Campo de ejemplo: Id del préstamo -->
+                    <div class="mb-3">
+                        <label for="idPrestamo" class="form-label">ID de Préstamo</label>
+                        <input type="text" class="form-control" id="idPrestamo" placeholder="12345" readonly>
                     </div>
 
-                    <div class="col-2"></div>
-                </div>
+                    <!-- Ejemplo de otros campos -->
+                    <div class="mb-3">
+                        <label for="responsable" class="form-label">Responsable</label>
+                        <input type="text" class="form-control" id="responsable" placeholder="Nombre del responsable">
+                    </div>
+                    <div class="mb-3">
+                        <label for="material" class="form-label">Material</label>
+                        <input type="text" class="form-control" id="material" placeholder="Descripción del material">
+                    </div>
+                    <div class="mb-3">
+                        <label for="estado" class="form-label">Estado</label>
+                        <select class="form-control" id="estado">
+                            <option value="pendiente">Pendiente</option>
+                            <option value="completado">Completado</option>
+                            <option value="cancelado">Cancelado</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Guardar Cambios</button>
             </div>
         </div>
     </div>
@@ -322,7 +218,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ¿Estás seguro de que deseas eliminar este registro? Esta acción no se puede deshacer.
+                <p>¿Estás seguro de que deseas eliminar este registro? Esta acción no se puede deshacer.</p>
+                <!-- Campo para mostrar el registro que se va a eliminar (opcional) -->
+                <p><strong>ID del Préstamo:</strong> <span id="idPrestamoEliminar">12345</span></p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -331,16 +229,5 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
 
 @endsection
