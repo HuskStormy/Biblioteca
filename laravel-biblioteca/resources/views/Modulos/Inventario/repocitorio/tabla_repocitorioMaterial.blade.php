@@ -589,10 +589,280 @@
   </div>
 </div>
 
-
 <div id="section3" class="content-section active">
-    
-</div>  
+  <div class="row">
+    <!--TABLA PREFIJO-->
+    <div class="card-group col-6">
+        <div class="card">
+
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">Colección </h5>
+
+                    <!-- Botones alineados al lado derecho -->
+                    <div class="d-flex gap-2 ms-auto">
+                        <!-- Botón Agregar -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal5">
+                            <i class="bi bi-plus-circle"></i> Agregar
+                        </button>
+
+                        <!-- Botón Imprimir -->
+                        <a type="button" class="btn btn-secondary btn_imprimir" href="{{url('pdf-usuarios')}}">
+                            <i class="bi bi-printer"></i> Imprimir
+                        </a>
+                    </div>
+            </div>
+
+            <div class="card-body">
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                            <tr class="align-middle">
+                                <th>n°</th>
+                                <th>Colección</th>
+                                <th>-</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>n°</td>
+                                <td>descripción de la colección</td>
+                                <td>
+                                    <div class="button-group">
+                                        <button type="button" class="btn_editar" data-bs-toggle="modal" data-bs-target="#editModal5">
+                                            <i class="bi bi-pen-fill">     Editar  </i>
+                                        </button>
+                                        <button type="button" class="btn_eliminar" data-bs-toggle="modal" data-bs-target="#deleteModal5">
+                                            <i class="bi bi-trash3-fill">  Eliminar </i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="align-middle">
+                                <th>n°</th>
+                                <th>Coleccion</th>
+                                <th>-</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+            </div>
+        </div>
+    </div>
+    <!--/.FIN DE TABLA AUTOR-->
+
+     <!-- Modal para Eliminar -->
+     <div class="modal fade" id="deleteModal5" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Eliminar Registro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Estás seguro de que deseas eliminar este registro? Esta acción no se puede deshacer.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger">Eliminar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- Modal para Editar -->
+    <div class="modal fade" id="editModal5" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Editar Registro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="titulo" class="form-label">Colección</label>
+                        <input type="text" class="form-control" id="titulo" value="Aqui se edita la descripcion de la colección">
+                    </div>
+                   
+                    <!-- Agrega más campos según tus necesidades -->
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+        </div>
+     </div>
+    </div>
+
+    <!-- Modal para Agregar -->
+    <div class="modal fade" id="addModal5" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Editar Registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="titulo" class="form-label">Colección</label>
+                            <input type="text" class="form-control" id="titulo" value="Agrega la coleccion ">
+                        </div>  
+                        <!-- Agrega más campos según tus necesidades -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--__________________________________________________________________________________________________________________-->
+    <!--TABLA MATERIAL IDIOMA-->
+    <div class="card-group col-6">
+            <div class="card">
+
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">Idioma material</h5>
+
+                        <!-- Botones alineados al lado derecho -->
+                        <div class="d-flex gap-2 ms-auto">
+                            <!-- Botón Agregar -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal6">
+                                <i class="bi bi-plus-circle"></i> Agregar
+                            </button>
+
+                            <!-- Botón Imprimir -->
+                            <a type="button" class="btn btn-secondary btn_imprimir" href="{{url('pdf-usuarios')}}">
+                                <i class="bi bi-printer"></i> Imprimir
+                            </a>
+                        </div>
+                </div>
+
+                <div class="card-body">
+                        <table id="example3" class="table table-bordered table-hover">
+                            <thead>
+                                <tr class="align-middle">
+                                    <th>n°</th>
+                                    <th>Idioma material</th>
+                                    <th>-</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>n°</td>
+                                    <td>Idioma del material</td>
+                                    <td>
+                                        <div class="button-group">
+                                            <button type="button" class="btn_editar" data-bs-toggle="modal" data-bs-target="#editModal6">
+                                                <i class="bi bi-pen-fill">     Editar  </i>
+                                            </button>
+                                            <button type="button" class="btn_eliminar" data-bs-toggle="modal" data-bs-target="#deleteModal6">
+                                                <i class="bi bi-trash3-fill">  Eliminar </i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="align-middle">
+                                    <th>n°</th>
+                                    <th>Idioma material</th>
+                                    <th>-</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                </div>
+            </div>
+    </div>
+    <!--/.FIN TABLA ESTANTEL -->
+
+
+        <!-- Modal para Eliminar -->
+     <div class="modal fade" id="deleteModal6" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Eliminar Registro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Estás seguro de que deseas eliminar este registro? Esta acción no se puede deshacer.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger">Eliminar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- Modal para Editar -->
+    <div class="modal fade" id="editModal6" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Editar Registro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="titulo" class="form-label">Idioma material</label>
+                        <input type="text" class="form-control" id="titulo" value="Aqui se edita idioma del material">
+                    </div>
+                   
+                    <!-- Agrega más campos según tus necesidades -->
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+        </div>
+     </div>
+    </div>
+
+    <!-- Modal para Agregar -->
+    <div class="modal fade" id="addModal6" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Editar Registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="titulo" class="form-label">Idioma material</label>
+                            <input type="text" class="form-control" id="titulo" value="idioma del material">
+                        </div>
+                       
+                        <!-- Agrega más campos según tus necesidades -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+</div>
+ 
 
 
 
