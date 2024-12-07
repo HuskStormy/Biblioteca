@@ -19,7 +19,7 @@
 
             <h3 class="profile-username text-center">Nombre de Usuario</h3>
 
-            <p class="text-muted text-center">Rol del usuario</p>
+            <p class="text-muted text-center">Rol del Usuario</p>
           </div>
           <!-- /.card-body -->
         </div>
@@ -28,14 +28,14 @@
         <!-- About Me Box -->
         <div class="card card-primary">
           <div class="card-header">
-            <h3 class="card-title">sobre mi</h3>
+            <h3 class="card-title">Sobre mi</h3>
           </div>
           <!-- /.card-header -->
           <div class="card-body">
-            <strong> descripcion</strong>
+            <strong> Descripción</strong>
 
             <p class="text-muted">
-              aqui se Agregar una descripcion del usuario que desee
+              Aquí se agrega una descripción del usuario que desee
             </p>
 
             <hr>
@@ -45,7 +45,7 @@
 
             <hr>
 
-            <strong><i class="fas fa-map-marker-alt mr-1"></i> Region</strong>
+            <strong><i class="fas fa-map-marker-alt mr-1"></i> Región</strong>
             <p class="text-muted">Centro Regional</p>
 
           </div>
@@ -65,13 +65,13 @@
           <div class="card-body">
             <div class="tab-content">
               <div class="active tab-pane" id="activity">
-                agregaria un historial de los prestamos que obtuvo y talvez las solvencias
+                Agregaría un historial de los préstamos que obtuvo y talvez las solvencias
 
               </div>
               <!-- /.tab-pane -->
               <div class="tab-pane" id="timeline">
                 <div class="form-group row">
-                    <label class="col-sm-5" style="font-size: 22px">Foto de perfil</label>
+                    <label class="col-sm-5" style="font-size: 22px">Foto de Perfil</label>
                 </div>
 
                 <form class="form-horizontal">
@@ -90,7 +90,7 @@
                         <div class="col-md-8">
                             <div class="custom-file mb-3">
                                 <input type="file" class="custom-file-input" id="exampleInputFile">
-                                <label class="custom-file-label" for="exampleInputFile">Seleccionar imagen</label>
+                                <label class="custom-file-label" for="exampleInputFile">Seleccionar Imagen</label>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">Guardar Cambios</button>
                         </div>
@@ -110,7 +110,7 @@
                       </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputName2" class="col-sm-2 col-form-label">Descripcion</label>
+                        <label for="inputName2" class="col-sm-2 col-form-label">Descripción</label>
                         <div class="col-sm-10">
                             <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
                         </div>
@@ -131,7 +131,7 @@
 
 
                 <div class="form-group row">
-                    <label class="col-sm-5" style="font-size: 22px">Cambio de contraseña</label>
+                    <label class="col-sm-5" style="font-size: 22px">Cambio de Contraseña</label>
                 </div>
 
                 <form class="form-horizontal">

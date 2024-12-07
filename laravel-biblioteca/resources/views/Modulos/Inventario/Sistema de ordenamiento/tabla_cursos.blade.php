@@ -12,7 +12,7 @@
         <div class="card">
             <!-- Encabezado de la tarjeta -->
             <div class="card-header d-flex justify-content-between align-items-center">
-                <h5 class="card-title mb-0">Autores Bibliograficos</h5>
+                <h5 class="card-title mb-0">Autores Bibliográficos</h5>
                 
                 
 
@@ -43,9 +43,9 @@
                                     <th>ID Autor</th>
                                     <th>Nombre</th>
                                     <th>Generos</th>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Editorial</th>
-                                    <th>Codigo de Editorial</th>
+                                    <th>Código de Editorial</th>
                                     
                                    
                                 </tr>
@@ -84,9 +84,9 @@
                         <th>ID Autor</th>
                                     <th>Nombre</th>
                                     <th>Generos</th>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Editorial</th>
-                                    <th>Codigo de Editorial</th>
+                                    <th>Código de Editorial</th>
                             <th>Acciones</th>
                         </tr>
                     </tfoot>
@@ -116,7 +116,7 @@
                         <form>
                             <!-- Datos material multimedia -->
                             <div class="row">
-                                <label for="titulo" class="form-label">material multimedia</label>
+                                <label for="titulo" class="form-label">Material multimedia</label>
                                 <div class="col-6">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
@@ -171,7 +171,7 @@
 
                             <!-- Observaciones -->
                             <div class="mb-3">
-                                <label for="Descripcion" class="form-label">Descripcion</label>
+                                <label for="Descripcion" class="form-label">Descripción</label>
                                 <textarea class="form-control" id="observaciones" rows="3" placeholder="Detalles adicionales o comentarios"></textarea>
                             </div>
 

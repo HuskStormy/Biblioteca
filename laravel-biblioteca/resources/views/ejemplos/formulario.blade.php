@@ -16,7 +16,7 @@
                 </div>
 
                 <div class="card-body">
-                    <h4>Titulo</h4>
+                    <h4>Título</h4>
 
                     <!-- texto -->
                     <div class="input-group mb-3">

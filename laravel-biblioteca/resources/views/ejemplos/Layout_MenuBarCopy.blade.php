@@ -61,22 +61,22 @@
 
         <li class="nav-item">
             <a href="{{url('tabla_permisos')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>permisos</p>
+                <i class="far fa-circle nav-icon"></i> <p>Permisos</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_parametros')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>parametros</p>
+                <i class="far fa-circle nav-icon"></i> <p>Parámetros</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('tabla_rol')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>rol</p>
+                <i class="far fa-circle nav-icon"></i> <p>Rol</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_bitacora')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>Bitacora</p>
+                <i class="far fa-circle nav-icon"></i> <p>Bitácora</p>
             </a>
         </li>
     </ul>
@@ -85,7 +85,7 @@
 
 
 <!-- CABECERA-->
-<li class="nav-header">inventario</li>
+<li class="nav-header">Inventario</li>
 
 <!-- BODY-->
 <li class="nav-item">
@@ -104,22 +104,22 @@
 
         <li class="nav-item">
             <a href="{{url('table_material')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de materiales</p>
+                <i class="far fa-circle nav-icon"></i> <p>Tabla de Materiales</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_audiovideo')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de audiovideo</p>
+                <i class="far fa-circle nav-icon"></i> <p>Tabla de Audiovideo</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('form_agregarMateria')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>agregar material</p>
+                <i class="far fa-circle nav-icon"></i> <p>Agregar Material</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('form_agregarAudiovideo')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>agregar audiovideo</p>
+                <i class="far fa-circle nav-icon"></i> <p>Agregar Audiovideo</p>
             </a>
         </li>
     </ul>
@@ -132,7 +132,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="bi bi-journal-album nav-icon"></i>
         <p>
-            Sistema de ordenamiento
+            Sistema de Ordenamiento
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -143,17 +143,17 @@
 
         <li class="nav-item">
             <a href="{{url('table_dewey')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>dewey</p>
+                <i class="far fa-circle nav-icon"></i> <p>Dewey</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_autores')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>autores</p>
+                <i class="far fa-circle nav-icon"></i> <p>Autores</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_cursos')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>cursos</p>
+                <i class="far fa-circle nav-icon"></i> <p>Cursos</p>
             </a>
         </li>
     </ul>
@@ -165,7 +165,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="bi bi-bookmark-check-fill nav-icon"></i>
         <p>
-            destacado
+            Destacado
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -176,12 +176,12 @@
 
         <li class="nav-item">
             <a href="{{url('table_destacado')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>table de destacado</p>
+                <i class="far fa-circle nav-icon"></i> <p>Table de Destacado</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('form_agregarDestacado')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>agregar destacado</p>
+                <i class="far fa-circle nav-icon"></i> <p>Agregar Destacado</p>
             </a>
         </li>
     </ul>
@@ -193,7 +193,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="bi bi-file-earmark-easel-fill nav-icon"></i>
         <p>
-            repocitorio
+            Repositorio
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -204,12 +204,12 @@
 
         <li class="nav-item">
             <a href="{{url('table_repocitorioMaterial')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>repocitorio de material</p>
+                <i class="far fa-circle nav-icon"></i> <p>Repositorio de Material</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_repocitorioAudiovideo')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>repocitorio de audiovideo</p>
+                <i class="far fa-circle nav-icon"></i> <p>Repositorio de Audiovideo</p>
             </a>
         </li>
     </ul>
@@ -219,7 +219,7 @@
 <!--########################################################################################################################################-->
 
 <!-- CABECERA-->
-<li class="nav-header">Gestiones y procesos</li>
+<li class="nav-header">Gestiones y Procesos</li>
 
 <!-- BODY-->
 <li class="nav-item">
@@ -227,7 +227,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
-            solvencias
+            Solvencias
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -238,12 +238,12 @@
 
         <li class="nav-item">
             <a href="{{url('table_solvencia')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de solvencias</p>
+                <i class="far fa-circle nav-icon"></i> <p>Tabla de Solvencias</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('proc_agregarSolvecia')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>generar solvencia</p>
+                <i class="far fa-circle nav-icon"></i> <p>Generar Solvencias</p>
             </a>
         </li>
     </ul>
@@ -255,7 +255,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="fa fa-user nav-icon"></i>
         <p>
-            prestamos
+            Préstamos
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -266,12 +266,12 @@
 
         <li class="nav-item">
             <a href="{{url('table_prestamo')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de prestamos</p>
+                <i class="far fa-circle nav-icon"></i> <p>Tabla de Préstamos</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('proc_solicitarPrestamo')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>solicitud de prestamos</p>
+                <i class="far fa-circle nav-icon"></i> <p>Solicitud de Préstamos</p>
             </a>
         </li>
     </ul>
@@ -284,7 +284,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="fa fa-user nav-icon"></i>
         <p>
-            ficha de ingreso
+            Ficha de Ingreso
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -295,12 +295,12 @@
 
         <li class="nav-item">
             <a href="{{url('table_ficha')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de fichas</p>
+                <i class="far fa-circle nav-icon"></i> <p>Tabla de Fichas</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('proc_agregarFicha')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>agregar ficha</p>
+                <i class="far fa-circle nav-icon"></i> <p>Agregar Ficha</p>
             </a>
         </li>
     </ul>
@@ -324,12 +324,12 @@
 
         <li class="nav-item">
             <a href="{{url('table_CentroRegional')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>Centros regionales</p>
+                <i class="far fa-circle nav-icon"></i> <p>Centros Regionales</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('proc_agregarCentroRegional')}}" class="nav-link nav_link_tree">
-                <i class="far fa-circle nav-icon"></i> <p>agregar centro regional</p>
+                <i class="far fa-circle nav-icon"></i> <p>Agregar Centro Regional</p>
             </a>
         </li>
     </ul>

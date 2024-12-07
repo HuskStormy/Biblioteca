@@ -12,7 +12,7 @@
         <div class="card">
             <!-- Encabezado de la tarjeta -->
             <div class="card-header d-flex justify-content-between align-items-center">
-                <h5 class="card-title mb-0">Autores Bibliograficos</h5>
+                <h5 class="card-title mb-0">Autores Bibliográficos</h5>
                 
                 
 
@@ -43,9 +43,9 @@
                                     <th>ID Autor</th>
                                     <th>Nombre</th>
                                     <th>Generos</th>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Editorial</th>
-                                    <th>Codigo de Editorial</th>
+                                    <th>Código de Editorial</th>
                                     
                                    
                                 </tr>
@@ -84,9 +84,9 @@
                         <th>ID Autor</th>
                                     <th>Nombre</th>
                                     <th>Generos</th>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Editorial</th>
-                                    <th>Codigo de Editorial</th>
+                                    <th>C+odigo de Editorial</th>
                             <th>Acciones</th>
                         </tr>
                     </tfoot>

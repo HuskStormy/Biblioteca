@@ -33,7 +33,7 @@
                             <tr class="align-middle">
                                 <th>n°</th>
                                 <th>Estado Usuario</th>
-                                <th>descripcion</th>
+                                <th>Descripción</th>
                                 <th>-</th>
                             </tr>
                         </thead>
@@ -41,14 +41,14 @@
                             <tr>
                                 <td>n°</td>
                                 <td>Estado Usuario</td>
-                                <td>descripcion</td>
+                                <td>Descripción</td>
                                 <td>
                                     <div class="button-group">
                                         <button type="button" class="btn_editar" data-bs-toggle="modal" data-bs-target="#editModal">
                                             <i class="bi bi-pen-fill">     Editar  </i>
                                         </button>
                                         <button type="button" class="btn_eliminar" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                            <i class="bi bi-trash3-fill">  rechazar </i>
+                                            <i class="bi bi-trash3-fill">  Rechazar </i>
                                         </button>
                                     </div>
                                 </td>
@@ -58,7 +58,7 @@
                             <tr class="align-middle">
                                 <th>n°</th>
                                 <th>Estado Usuario</th>
-                                <th>descripcion</th>
+                                <th>Descripción</th>
                                 <th>-</th>
                             </tr>
                         </tfoot>
@@ -95,7 +95,7 @@
                                 <tr class="align-middle">
                                     <th>n°</th>
                                     <th>Objeto tipo</th>
-                                    <th>descripcion</th>
+                                    <th>Descripción</th>
                                     <th>-</th>
                                 </tr>
                             </thead>
@@ -103,14 +103,14 @@
                                 <tr>
                                     <td>n°</td>
                                     <td>Objeto tipo</td>
-                                    <td>descripcion</td>
+                                    <td>Descripción</td>
                                     <td>
                                         <div class="button-group">
                                             <button type="button" class="btn_editar" data-bs-toggle="modal" data-bs-target="#editModal">
                                                 <i class="bi bi-pen-fill">     Editar  </i>
                                             </button>
                                             <button type="button" class="btn_eliminar" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                                <i class="bi bi-trash3-fill">  rechazar </i>
+                                                <i class="bi bi-trash3-fill">  Rechazar </i>
                                             </button>
                                         </div>
                                     </td>
@@ -120,7 +120,7 @@
                                 <tr class="align-middle">
                                     <th>n°</th>
                                     <th>Objeto tipo</th>
-                                    <th>descripcion</th>
+                                    <th>Descripción</th>
                                     <th>-</th>
                                 </tr>
                             </tfoot>

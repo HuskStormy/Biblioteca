@@ -16,7 +16,7 @@
     <div class="details">
         <p><strong>Creado por:</strong> Nombre del Usuario</p>
         <p><strong>Fecha de creación:</strong> {{ date('d/m/Y') }}</p>
-        <p><strong>Descripción:</strong> agregar una descripcion</p>
+        <p><strong>Descripción:</strong> Agregar una Descripción</p>
     </div>
 
     <table>
