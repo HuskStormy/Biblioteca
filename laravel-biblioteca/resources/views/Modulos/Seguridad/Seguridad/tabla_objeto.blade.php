@@ -1,6 +1,6 @@
 @extends('layout.Layout_Main')
 
-@section('TITULO_PAGINA', 'Parametros')
+@section('TITULO_PAGINA', 'Objeto')
 @section('PAG_GRUPO', 'Seguridad')
 @section('content')
 
@@ -21,7 +21,7 @@
                         </button>
 
                         <!-- Botón Imprimir -->
-                        <a type="button" class="btn btn-secondary btn_imprimir" href="{{url('pdf-usuarios')}}">
+                        <a type="button" class="btn btn-secondary btn_imprimir" href="{{url('pdf-objeto')}}">
                             <i class="bi bi-printer"></i> Imprimir
                         </a>
                     </div>

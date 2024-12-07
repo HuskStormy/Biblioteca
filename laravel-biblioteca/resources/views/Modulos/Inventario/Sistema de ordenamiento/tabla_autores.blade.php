@@ -13,8 +13,8 @@
             <!-- Encabezado de la tarjeta -->
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h5 class="card-title mb-0">Autores Bibliográficos</h5>
-                
-                
+
+
 
 
 
@@ -46,8 +46,8 @@
                                     <th>Descripción</th>
                                     <th>Editorial</th>
                                     <th>Código de Editorial</th>
-                                    
-                                   
+
+
                                 </tr>
                                 </thead>
                     <tbody>
@@ -62,15 +62,15 @@
                                 <td>#-{{ 14526 + $i }}</td>
                                 <td>
                                     <div class="button-group">
-                                        <button type="button" class="btn btn-warning btn-sm" 
-                                            data-bs-toggle="modal" 
-                                            data-bs-target="#editModal" 
+                                        <button type="button" class="btn btn-warning btn-sm"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#editModal"
                                             data-id="SOLV-{{ 1000 + $i }}">
                                             <i class="bi bi-pen-fill"></i> Editar
                                         </button>
-                                        <button type="button" class="btn btn-danger btn-sm" 
-                                            data-bs-toggle="modal" 
-                                            data-bs-target="#deleteModal" 
+                                        <button type="button" class="btn btn-danger btn-sm"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#deleteModal"
                                             data-id="SOLV-{{ 1000 + $i }}">
                                             <i class="bi bi-trash3-fill"></i> Eliminar
                                         </button>
@@ -147,11 +147,11 @@
                                             <option>ESPAÑOL</option>
                                         </select>
                                         </div>
-                                       
+
                                         </select>
                                     </div>
                                 </div>
-                                
+
                             <div class="col-8">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
@@ -170,8 +170,8 @@
                                     </div>
                                 </div>
                             </div>
-                            </div> 
-                            
+                            </div>
+
                             <!-- Observaciones -->
                             <div class="mb-3">
                                 <label for="Descripcion" class="form-label">Descripcion</label>
@@ -183,9 +183,9 @@
                                 <button type="button" class="btn btn-primary">Registrar Autor</button>
                             </div>
                         </form>
-                     
+
                 </div>
-                   
+
             </div>
         </div>
     </div>
@@ -193,6 +193,6 @@
 
 
 
- 
+
 
 @endsection

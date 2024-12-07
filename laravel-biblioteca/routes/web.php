@@ -66,6 +66,11 @@ Route::get('/mnt-ProcGest',function () {  return view('Modulos.matenimiento.mtn-
 ///pdfs
 Route::get('/pdf-usuarios', function () { $pdf = PDF::loadView('PDFs.pdf_usuarios'); return $pdf->stream('usuarios.pdf'); });
 Route::get('/pdf-bitacora', function () { $pdf = PDF::loadView('PDFs.pdf_bitacora'); return $pdf->stream('bitacora.pdf'); });
+Route::get('/pdf-Parametros', function () { $pdf = PDF::loadView('PDFs.pdf_parametro'); return $pdf->stream('parametros.pdf'); });
+Route::get('/pdf-permisos', function () { $pdf = PDF::loadView('PDFs.pdf_permisos'); return $pdf->stream('permisos.pdf'); });
+Route::get('/pdf-objeto', function () { $pdf = PDF::loadView('PDFs.pdf_permisos'); return $pdf->download('objeto.pdf'); });
+
+
 Route::get('/pdf-solvencias', function () { $pdf = PDF::loadView('PDFs.pdf_solvencia'); return $pdf->stream('solvencia.pdf'); });
 Route::get('/pdf-prestamos', function () { $pdf = PDF::loadView('PDFs.pdf_prestamo'); return $pdf->stream('prestamo.pdf'); });
 
