@@ -181,7 +181,7 @@
                         <label for="idPrestamo" class="form-label">ID de Préstamo</label>
                         <input type="text" class="form-control" id="idPrestamo" placeholder="12345" readonly>
                     </div>
-                    
+
                     <!-- Ejemplo de otros campos -->
                     <div class="mb-3">
                         <label for="responsable" class="form-label">Responsable</label>

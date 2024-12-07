@@ -12,7 +12,7 @@
 <body>
     <div class="header">
         <img src="{{public_path().'/asset/imagenes/infop_logo2.png'}}" alt="">
-        <h1>Solvencia</h1>
+        <h1>Prestamo</h1>
     </div>
 
     <div class="details">
@@ -21,38 +21,54 @@
         <p><strong>Descripción:</strong> agregar una descripcion</p>
     </div>
 
+
+    
     <table>
         <thead>
             <tr>
                 <th>#</th>
-                <th>ID de Solvencia</th>
-                <th>Usuario</th>
+                <th>ID Préstamo</th>
+                <th>ID Usuario</th>
                 <th>Responsable</th>
+                <th>Material</th>
+                <th>Tipo de Préstamo</th>
                 <th>Estado</th>
-                <th>Fecha de Creación</th>
+                <th>Fecha Préstamo</th>
+                <th>Fecha Devolución</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
-                <td>SV-001</td>
+                <td>PR-001</td>
                 <td>USR-123</td>
                 <td>Juan Pérez</td>
+                <td>Libro de Física</td>
+                <td>Temporal</td>
                 <td>Activo</td>
                 <td>2024-12-01</td>
+                <td>2024-12-15</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th>#</th>
-                <th>ID de Solvencia</th>
-                <th>Usuario</th>
+                <th>ID Préstamo</th>
+                <th>ID Usuario</th>
                 <th>Responsable</th>
+                <th>Material</th>
+                <th>Tipo de Préstamo</th>
                 <th>Estado</th>
-                <th>Fecha de Creación</th>
+                <th>Fecha Préstamo</th>
+                <th>Fecha Devolución</th>
             </tr>
         </tfoot>
     </table>
+
+
+
+
+
 
 
     <script type="text/php">
