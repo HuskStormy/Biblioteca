@@ -60,22 +60,22 @@
 
         <li class="nav-item">
             <a href="{{url('tabla_permisos')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>permisos</p>
+                <i class="far fa-circle nav-icon"></i> <p>Permisos</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('tabla_objeto')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>objeto</p>
+                <i class="far fa-circle nav-icon"></i> <p>Objeto</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_parametros')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>parametros</p>
+                <i class="far fa-circle nav-icon"></i> <p>Parametros</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('tabla_rol')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>rol</p>
+                <i class="far fa-circle nav-icon"></i> <p>Rol</p>
             </a>
         </li>
         <li class="nav-item">
@@ -137,17 +137,17 @@
 
         <li class="nav-item">
             <a href="{{url('table_dewey')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>dewey</p>
+                <i class="far fa-circle nav-icon"></i> <p>Dewey</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_autores')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>autores</p>
+                <i class="far fa-circle nav-icon"></i> <p>Autores</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_cursos')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>cursos</p>
+                <i class="far fa-circle nav-icon"></i> <p>Cursos</p>
             </a>
         </li>
     </ul>
@@ -170,7 +170,7 @@
 
         <li class="nav-item">
             <a href="{{url('table_destacado')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>table de destacado</p>
+                <i class="far fa-circle nav-icon"></i> <p>Reporte destacado</p>
             </a>
         </li>
         <li class="nav-item">
@@ -187,7 +187,7 @@
     <a href="#" class="nav-link nav_link_bar">
         <i class="bi bi-file-earmark-easel-fill nav-icon"></i>
         <p>
-            repocitorio
+            Repositorio
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -198,12 +198,12 @@
 
         <li class="nav-item">
             <a href="{{url('table_repocitorioMaterial')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Repocitorio de material</p>
+                <i class="far fa-circle nav-icon"></i> <p>Repositorio de material</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{url('table_repocitorioAudiovideo')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>Repocitorio de audiovideo</p>
+                <i class="far fa-circle nav-icon"></i> <p>Repositorio de audiovideo</p>
             </a>
         </li>
     </ul>
@@ -234,7 +234,7 @@
     <a href="{{url('table_prestamo')}}" class="nav-link">
         <i class="fa fa-user nav-icon"></i>
         <p>
-            prestamos
+            Prestamos
         </p>
     </a>
     <!-- /.BUTTON principal -->
@@ -258,7 +258,7 @@
 
         <li class="nav-item">
             <a href="{{url('table_ficha')}}" class="nav-link nav-tree">
-                <i class="far fa-circle nav-icon"></i> <p>tabla de fichas</p>
+                <i class="far fa-circle nav-icon"></i> <p>Reporte de fichas</p>
             </a>
         </li>
         <li class="nav-item">
@@ -316,7 +316,7 @@
     <a href="mnt-inv" class="nav-link nav_link_bar">
         <i class="bi bi-clipboard2-check-fill nav-icon"></i>
         <p>
-            inventario
+            Inventario
         </p>
     </a>
     <!-- /.BUTTON principal -->
