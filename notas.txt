@@ -32,3 +32,9 @@ codigo para el github despues de clonar
 Codigo para instalar dompdf
 	composer require barryvdh/laravel-dompdf
 	php artisan vendor:publish --provider="Barryvdh\DomPDF\ServiceProvider"
+
+
+
+npm init -y
+npm install --save express mysql body-parser
+npm i nodemon
