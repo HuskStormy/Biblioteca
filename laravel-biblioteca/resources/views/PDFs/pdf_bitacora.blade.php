@@ -20,6 +20,7 @@
         <p><strong>Fecha de creación:</strong> {{ date('d/m/Y') }}</p>
         <p><strong>Descripción:</strong> agregar una descripcion</p>
     </div>
+hola mundo
 
 
 
@@ -36,7 +37,6 @@
 
 
 
-    
     <table>
         <thead>
             <tr>
