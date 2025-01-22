@@ -86,12 +86,14 @@
   <div class="card">
     <div class="card-body login-card-body">
       <!-- Login Form -->
-      <form action="index"  id="loginForm" style="display: block;">
+      <form action="/login/ingresar"  id="loginForm" style="display: block;" method="POST">
+        @csrf
+
         <p class="login-box-msg">Inicia sesión</p>
 
         <!-- Email Input -->
         <div class="input-group mb-3">
-          <input type="email" name="email" class="form-control" placeholder="Correo electrónico" required>
+          <input type="email" name="email" class="form-control" placeholder="Correo electrónico" maxlength="50" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -101,7 +103,7 @@
 
         <!-- Password Input -->
         <div class="input-group mb-3">
-          <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
+          <input type="password" name="password" class="form-control" placeholder="Contraseña" maxlength="50" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -125,12 +127,13 @@
       </form>
 
       <!-- Register Form -->
-      <form action="Validacion" id="registerForm" style="display: none;">
+      <form action="/login/Registrar" id="registerForm" style="display: none;" method="POST">
+        @csrf
         <p class="login-box-msg">Regístrate</p>
 
         <!-- Name Input -->
         <div class="input-group mb-3">
-          <input type="text" name="name" class="form-control" placeholder="Nombre completo" required>
+          <input type="text" name="name" class="form-control" placeholder="Nombre completo" maxlength="50" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -139,7 +142,7 @@
         </div>
         <!-- Email Input -->
         <div class="input-group mb-3">
-            <input type="text" name="DNI" class="form-control" placeholder="DNI" required>
+            <input type="text" name="DNI" class="form-control" placeholder="DNI" maxlength="15" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>
@@ -148,7 +151,7 @@
           </div>
         <!-- Email Input -->
         <div class="input-group mb-3">
-          <input type="email" name="emails" class="form-control" placeholder="Correo electrónico" required>
+          <input type="email" name="email" class="form-control" placeholder="Correo electrónico" maxlength="50" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -158,7 +161,7 @@
 
         <!-- Password Input -->
         <div class="input-group mb-3">
-          <input type="password" name="passwords" class="form-control" placeholder="Contraseña" required>
+          <input type="password" name="password" class="form-control" placeholder="Contraseña" maxlength="50" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -168,7 +171,7 @@
 
         <!-- Password Input -->
         <div class="input-group mb-3">
-            <input type="password" name="passwords" class="form-control" placeholder="Confirmar Contraseña" required>
+            <input type="password" name="password_r" class="form-control" placeholder="Confirmar Contraseña" maxlength="50" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>

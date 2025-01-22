@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Seguridad\LoginController;
 
 ///     Systema     ///////////////////////////////////////////////////////////////////////////////////////////////
 Route::get('/', function () {       return view('index');   });     ///Ruta Index
@@ -9,6 +9,10 @@ Route::get('/index', function () {  return view('index');   });     ///Ruta Inde
 Route::get('/login',function () {   return view('login.login'); }); ///Ruta del login
 Route::get('/Validacion',function () {   return view('login.validacion'); }); ///Ruta del login
 Route::get('/perfil',function () {  return view('login.perfil'); });
+
+Route::post('/login/ingresar',  [LoginController::class, 'Login']);         //form_login_ingresar
+Route::post('/login/Registrar', [LoginController::class, 'Registrarse']);   //form_login_registrase
+
 
 Route::get('/restore',function () {   return view('login.restore'); }); ///Ruta del login
 Route::get('/backup',function () {   return view('login.backup'); }); ///Ruta del login
