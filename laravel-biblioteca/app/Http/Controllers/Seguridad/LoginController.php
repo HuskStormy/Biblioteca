@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\seguridad;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class LoginController
 {
@@ -14,7 +15,13 @@ class LoginController
             'password' => 'required|string|max:50',
         ]);
 
-        return $DatoForm['email'].' - '.$DatoForm['password'];
+        $url = 'http://localhost:3000/usuario/2';
+        $DataEntidad = json_decode(Http::get($url), true);  // Decodificamos la respuesta como un array
+        if ($DataEntidad['CORREO_ELECTRONICO'] == $DatoForm['email'] && $DataEntidad['CONTRASENA'] == $DatoForm['password']){
+            return "son iguales";
+        }
+        return "Error";
+
     }
 
     public function Registrarse(Request $request){

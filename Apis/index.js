@@ -19,7 +19,7 @@ app.use(bp.json());
 var Vuser       = 'root';
 var Vpassword   = '';
 var Vhost       = 'localhost';
-var VBaseData   = 'biblioteca';
+var VBaseData   = 'biblioteca_modulo_seguridad';
 const port      = 3000;
 
 // conectar a la base de datos (Mysql)
@@ -64,8 +64,12 @@ console.log ("Views:");
 app.get('/', function (req, res) {
     File_show('public/index.html', req, res);
 });
-app.get('/persona', (req, res) => {
-    select('select * from tbl_persona', req, res);
+app.get('/usuario', (req, res) => {
+    select('call ProSeguridad_Select_TBLusuario();', req, res);
+});
+
+app.get('/usuario/:id', (req, res) => {
+    select_one('call ProSeguridad_Select_TBLusuario_id(?)', req, res);
 });
 
 app.post('/persona/add', (req, res) => {
@@ -92,7 +96,7 @@ app.delete('/persona/delete/:id', (req, res) => {
 
 
 app.get('/actividad', (req, res) => {
-    select('CALL ACT_SELECT()', req, res);
+    select('select * from tbl_ms_parametro;', req, res);
 });
 app.get('/actividad/:id', (req, res) => {
     select_one('CALL ACT_SELECT_ID(?)', req, res);
@@ -144,6 +148,7 @@ async function select(query, req, res) {
         (err, rows, fields) => {
             if (!err){
                     res.status(200).json(rows[0]);
+                    
                     console.log('get.query( \''+ query +'\' )');
             }   else console.log(err);
         }
@@ -156,7 +161,7 @@ async function select_one(query, req, res) {
         (err, rows, fields) => {
             if (!err) {
                 if (rows[0].length > 0) {
-                    res.status(200).json(rows[0]);
+                    res.status(200).json(rows[0][0]);
                     console.log('get.query( \''+ query +'\' ), id(\'' + id + '\')');
                 } else {
                     res.status(200).json([null]);
