@@ -33,7 +33,9 @@ RUTA	= ...\biblioteca\Apis\
 CODIGO	=
 	nodemon index.js
 
-
+CODIGO PARA CREAR CONTROALDORES
+	codigo : "php artisan make:controller nombre_del_controlador"
+	ejemplo: "php artisan make:controller ejemploController"
 
 
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
