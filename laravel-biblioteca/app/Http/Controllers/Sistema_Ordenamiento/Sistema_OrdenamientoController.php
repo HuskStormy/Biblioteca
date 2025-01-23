@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Sistema_Ordenamiento\Sistema_OrdenamientoController;
+namespace App\Http\Controllers\Sistema_Ordenamiento;
 
 use Illuminate\Http\Request;
 
