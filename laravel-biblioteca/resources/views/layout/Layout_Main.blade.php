@@ -52,6 +52,7 @@
         <!-- pantalla de carga -->
         <!-- pantalla de carga -->
         <!-- pantalla de carga -->
+        
             <div class="preloader flex-column justify-content-center align-items-center">
                 <img class="animation__shake" src="{{asset('asset/imagenes/Infop_logo2.png')}}" alt="AdminLTELogo" height="260" width="260">
             </div>
@@ -65,6 +66,9 @@
         <!-- Barra de navegacion horizontal arriba -->
         <nav class="main-header navbar navbar-expand BarraHorizontal_color">
             <!-- NAVBAR derecho -->
+
+            
+            
             <ul class="navbar-nav">
 
                 <!-- BOTON abrir la barra de navegacion vertical izquierda -->
@@ -124,7 +128,7 @@
                     <img src="dist/img/user2-160x160.jpg" class="img-rounded elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                    <a href="perfil" class="d-block user-text">Nombre de Usuario</a>
+                    <a href="perfil" class="d-block user-text"> {{ Session::get('user_nombre'); }} </a>
                     </div>
                 </div>
                 <!-- /.USUARIO PERFIL -->
@@ -153,7 +157,7 @@
                 <!-- /.sidebar-menu -->
             </div>
             <div>
-                <a class="btn btn-cerrarSesion" href="{{url('login')}}">
+                <a class="btn btn-cerrarSesion" href="{{url('/login/Logout')}}">
                     cerrar sesion
                 </a>
 

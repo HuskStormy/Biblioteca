@@ -4,6 +4,12 @@
 @section('PAG_GRUPO', 'Seguridad')
 @section('content')
 
+@php
+  $VRFT = "true";   
+  echo($VRFT);
+@endphp
+
+
 <div class="container-fluid">
     <div class="row">
       <div class="col-md-3">
@@ -17,9 +23,9 @@
                    alt="User profile picture">
             </div>
 
-            <h3 class="profile-username text-center">Nombre de Usuario</h3>
+            <h3 class="profile-username text-center">{{Session::get('user_nombre')}}</h3>
+            <p class="text-muted text-center">{{Session::get('user_Rol')}}</p>
 
-            <p class="text-muted text-center">Rol del Usuario</p>
           </div>
           <!-- /.card-body -->
         </div>

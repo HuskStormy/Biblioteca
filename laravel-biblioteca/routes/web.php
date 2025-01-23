@@ -1,17 +1,24 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Seguridad\LoginController;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Session;
+
+use App\Http\Controllers\seguridad\LoginController;
 
 ///     Systema     ///////////////////////////////////////////////////////////////////////////////////////////////
-Route::get('/', function () {       return view('index');   });     ///Ruta Index
-Route::get('/index', function () {  return view('index');   });     ///Ruta Index
+Route::get('/', function () {       return redirect('/index');   });     ///Ruta Index
+
+Route::get('/index', [LoginController::class, 'get_index']);     ///Ruta Index
 Route::get('/login',function () {   return view('login.login'); }); ///Ruta del login
 Route::get('/Validacion',function () {   return view('login.validacion'); }); ///Ruta del login
 Route::get('/perfil',function () {  return view('login.perfil'); });
 
-Route::post('/login/ingresar',  [LoginController::class, 'Login']);         //form_login_ingresar
-Route::post('/login/Registrar', [LoginController::class, 'Registrarse']);   //form_login_registrase
+Route::post('/login/ingresar',  [LoginController::class, 'Accion_Login']);         //form_login_ingresar
+Route::post('/login/Registrar', [LoginController::class, 'Accion_Registrarse']);   //form_login_registrase
+Route::get('/login/Logout',     [LoginController::class, 'Accion_Logout']);        //form_login_deslogiarse
+
+//Route::get('/login',     [LoginController::class, 'get_']);        //form_login_deslogiarse
 
 
 Route::get('/restore',function () {   return view('login.restore'); }); ///Ruta del login

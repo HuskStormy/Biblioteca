@@ -71,6 +71,9 @@ app.get('/usuario', (req, res) => {
 app.get('/usuario/:id', (req, res) => {
     select_one('call ProSeguridad_Select_TBLusuario_id(?)', req, res);
 });
+app.get('/usuario/correo/:id', (req, res) => {
+    select_one('call ProSeguridad_Select_TBLusuario_Correo(?)', req, res);
+});
 
 app.post('/persona/add', (req, res) => {
     let rep = req.body;
