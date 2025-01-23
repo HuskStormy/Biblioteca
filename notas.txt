@@ -1,40 +1,44 @@
-instalacion de laravel
-	cmd:laravel new <nombre_de_la_carpeta>
-
-correr el servidor laravel
-	cmd:php artisan serve
-
-
-
-
-
-
-Ojala funcione ya....
-
-para iconos:
-	https://fontawesome.com/v4/icons/
-	https://icons.getbootstrap.com/					<- este es mejor
-
-
-
-
-codigo para el github despues de clonar
+Despues de clonar el proyecto, colocar los siguientes Codigo
+RUTA	= ...\biblioteca\laravel-biblioteca\
+CODIGO	=
 	composer install 
-	mv .env.example .env 
 	php artisan cache:clear 
 	composer dump-autoload 
 	php artisan key:generate
 
-	dang: hola mundo
+iniciar el proyecto
+RUTA	= ...\biblioteca\laravel-biblioteca\
+CODIGO	=
+	php artisan serve
 
-
-
-Codigo para instalar dompdf
+CODIGO SI NO CARGA LOS PDF's
+RUTA	= ...\biblioteca\laravel-biblioteca\
+CODIGO	=
 	composer require barryvdh/laravel-dompdf
 	php artisan vendor:publish --provider="Barryvdh\DomPDF\ServiceProvider"
 
+CODIGO para instalar la api
+RUTA	= ...\biblioteca\Apis\
+CODIGO	=
+	npm init -y
+	npm install --save express mysql body-parser
+	npm i nodemon
+
+CODIGO PARA INICAR LA API
+RUTA	= ...\biblioteca\Apis\
+CODIGO	=
+	nodemon index.js
 
 
-npm init -y
-npm install --save express mysql body-parser
-npm i nodemon
+
+
+
+
+
+
+
+
+
+para iconos:
+	https://fontawesome.com/v4/icons/
+	https://icons.getbootstrap.com/					<- este es mejor
