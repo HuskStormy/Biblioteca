@@ -68,36 +68,21 @@
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg"><strong>Validacion Gmail</strong></p>
+      <p class="login-box-msg"><strong>Validación de Registro</strong></p>
       <p>
         Estimado usuario, para completar el proceso de registro con el nombre <strong>[Nombre del Usuario]</strong>
         y el correo <strong>[correo@ejemplo.com]</strong>, deberá presentarse personalmente en la biblioteca del INFOP.
       </p>
-
-      <form action="/login/Validacion" method="POST">
-        @csrf
-        <!-- Name Input -->
-        <div class="input-group mb-3">
-          <input type="text" name="name" class="form-control mayusculas" placeholder="Codigo" maxlength="20" required>
-          <div class="input-group-append">
-            <div class="input-group-text">
-            
-            </div>
-          </div>
-        </div>
-        <!-- Submit Button -->
-        <div class="row">
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary btn-block submit-btn" disabled>Registrarse</button>
-          </div>
-        </div>
-
-        <!-- Switch to Login -->
-        <div class="mt-3 text-center">
-          <a href="#" onclick="switchForm('loginForm')">¿Ya tienes cuenta? Inicia sesión aquí</a>
-        </div>
-      </form>
-
+      <p>
+        Por favor, lleve consigo un documento de identificación oficial y este mensaje como referencia.
+        Una vez validada su información, se habilitará su acceso a la plataforma.
+      </p>
+      <p class="text-center">
+        Gracias por su comprensión.
+      </p>
+      <div class="text-center mt-3">
+        <a href="login" class="btn btn-primary btn-block">Volver a Inicio</a>
+      </div>
     </div>
     <!-- /.login-card-body -->
   </div>

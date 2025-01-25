@@ -6,10 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reporte</title>
     <link rel="stylesheet" href="asset/pdf.css">
+
 </head>
 
 
 <body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.onload = function() {
+                if ({{!session()->has('Session')}}) { window.location.href = "{{url('/login')}}";}
+            }
+        });
+    </script>
+    
     <div class="header">
         <img src="{{public_path().'/asset/imagenes/infop_logo2.png'}}" alt="">
         <h1>Prestamo</h1>

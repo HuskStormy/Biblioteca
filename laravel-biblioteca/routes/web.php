@@ -7,16 +7,24 @@ use Illuminate\Support\Facades\Session;
 use App\Http\Controllers\seguridad\LoginController;
 
 ///     Systema     ///////////////////////////////////////////////////////////////////////////////////////////////
-Route::get('/', function () {       return redirect('/index');   });     ///Ruta Index
 
-Route::get('/index', [LoginController::class, 'get_index']);     ///Ruta Index
-Route::get('/login',function () {   return view('login.login'); }); ///Ruta del login
+
+
+
 Route::get('/Validacion',function () {   return view('login.validacion'); }); ///Ruta del login
 Route::get('/perfil',function () {  return view('login.perfil'); });
 
-Route::post('/login/ingresar',  [LoginController::class, 'Accion_Login']);         //form_login_ingresar
-Route::post('/login/Registrar', [LoginController::class, 'Accion_Registrarse']);   //form_login_registrase
-Route::get('/login/Logout',     [LoginController::class, 'Accion_Logout']);        //form_login_deslogiarse
+
+
+Route::get('/',     function () {       return redirect('/index');   });            ///Ruta Index
+Route::get('/index',            [LoginController::class, 'ruta_index']);            //Ruta Index
+
+Route::get('/login',            [LoginController::class, 'ruta_login']);            ///Ruta del login
+Route::post('/login/ingresar',  [LoginController::class, 'Accion_Login']);          //form_login_ingresar
+Route::post('/login/Registrar', [LoginController::class, 'Accion_Registrarse']);    //form_login_registrase
+Route::get('/login/Logout',     [LoginController::class, 'Accion_Logout']);         //form_login_deslogiarse
+Route::get('/Mail',             [LoginController::class, 'Get_Mail']);         //form_login_deslogiarse
+
 
 //Route::get('/login',     [LoginController::class, 'get_']);        //form_login_deslogiarse
 
@@ -83,7 +91,7 @@ Route::get('/pdf-objeto', function () { $pdf = PDF::loadView('PDFs.pdf_permisos'
 
 
 Route::get('/pdf-solvencias', function () { $pdf = PDF::loadView('PDFs.pdf_solvencia'); return $pdf->stream('solvencia.pdf'); });
-Route::get('/pdf-prestamos', function () { $pdf = PDF::loadView('PDFs.pdf_prestamo'); return $pdf->stream('prestamo.pdf'); });
+Route::get('/pdf-prestamos', function () { if (!session()->has('Session')) {return redirect('/login');}  $pdf = PDF::loadView('PDFs.pdf_prestamo'); return $pdf->stream('prestamo.pdf'); });
 
 
 

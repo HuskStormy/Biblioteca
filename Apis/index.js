@@ -6,7 +6,6 @@
 ////////////////////////////////////////////////////////////////                                                    /////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ****************************************************************************************************************************************************************************************************/
-
 //Librerias
 const mysql     = require('mysql');
 const express   = require('express');
@@ -64,16 +63,116 @@ console.log ("Views:");
 app.get('/', function (req, res) {
     File_show('public/index.html', req, res);
 });
+
 app.get('/usuario', (req, res) => {
     select('call ProSeguridad_Select_TBLusuario();', req, res);
 });
-
 app.get('/usuario/:id', (req, res) => {
     select_one('call ProSeguridad_Select_TBLusuario_id(?)', req, res);
 });
 app.get('/usuario/correo/:id', (req, res) => {
     select_one('call ProSeguridad_Select_TBLusuario_Correo(?)', req, res);
 });
+app.post('/usuario/add', (req, res) => {
+    let rep = req.body;
+    
+    // Definir los parámetros que serán enviados a la consulta
+    var paramet = `SET @p0 = ?; SET @p1 = ?; SET @p2 = ?; SET @p3 = ?; SET @p4 = ?; SET @p5 = ?; SET @p6 = ?; SET @p7 = ?; SET @p8 = ?; SET @p9 = ?; SET @p10 = ?;`;
+    // La consulta que invoca el procedimiento almacenado
+    var query = ` CALL ProSeguridad_Insert_TBLusuario(@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);`;
+    
+    // Llamar la función Insert pasándole los parámetros correctamente
+    Insert(query, paramet, [
+        rep.p0,   // estado usuario
+        rep.p1,   // rol
+        rep.p2,   // centroReginal
+        rep.p3,   // Nombre Usuario
+        rep.p4,   // contrasena
+        rep.p5,   // correo electrónico
+        rep.p6,   // DNI
+        rep.p7,   // fecha_conexion_ultima
+        rep.p8,   // cod primer ingreso
+        rep.p9,   // fecha_vencimiento
+        rep.p10   // intendos
+    ], req, res);
+});
+app.put('/persona/modify', (req, res) => {
+    const {
+        p_ID_USUARIO,
+        p_ID_ESTADO_USUARIO,
+        p_ID_ROL,
+        p_ID_CENTRO_REGIONAL,
+        p_NOMBRE_USUARIO,
+        p_DNI,
+        p_CONTRASENA,
+        p_CORREO_ELECTRONICO,
+        p_FECHA_CONEXION_ULTIMA,
+        p_COD_PRIMER_INGRESO,
+        p_FECHA_VENCIMIENTO,
+        p_INTENTOS
+    } = req.body;
+    var query   =   " CALL `ProSeguridad_Update_TBLusuario`(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+    Put(query, 
+        [        
+            p_ID_USUARIO,
+            p_ID_ESTADO_USUARIO,
+            p_ID_ROL,
+            p_ID_CENTRO_REGIONAL,
+            p_NOMBRE_USUARIO,
+            p_DNI,
+            p_CONTRASENA,
+            p_CORREO_ELECTRONICO,
+            p_FECHA_CONEXION_ULTIMA,
+            p_COD_PRIMER_INGRESO,
+            p_FECHA_VENCIMIENTO,
+            p_INTENTOS
+        ], 
+    req, res);
+});
+app.put('/persona/Intento/menos', (req, res) => {
+    const {
+        p0
+    } = req.body;
+    var query   =   "SET @p0 = ?; UPDATE `tbl_ms_usuario` SET `INTENTOS` = `INTENTOS` - 1 WHERE `ID_USUARIO` = @p0;";
+    Put(query, 
+        [        
+            p0
+        ], 
+    req, res);
+});
+app.put('/persona/Estado/Bloqueado', (req, res) => {
+    const {
+        p0
+    } = req.body;
+    var query   =   "SET @p0 = ?; UPDATE `tbl_ms_usuario` SET `ID_ESTADO_USUARIO` = '4' WHERE `tbl_ms_usuario`.`ID_USUARIO` = @p0;";
+    Put(query, 
+        [        
+            p0
+        ], 
+    req, res);
+});
+app.put('/persona/Intento/Restableser', (req, res) => {
+    const {
+        p0
+    } = req.body;
+    var query   =   "SET @p0 = ?;SET @p1 = (SELECT p.VALOR FROM tbl_ms_parametro p WHERE p.ID_PARAMETRO = 1); UPDATE `tbl_ms_usuario` SET `INTENTOS` = @p1 WHERE `tbl_ms_usuario`.`ID_USUARIO` = @p0;";
+    Put(query, 
+        [        
+            p0
+        ], 
+    req, res);
+});
+
+
+app.get('/parametro/:id', (req, res) => {
+    select_one('CALL `ProSeguridad_Select_TBLparametro_id`(?);', req, res);
+});
+
+app.get('/Usu_Estad/:id', (req, res) => {
+    select_one('SET @p0=?; CALL ProSeguridad_Select_TBLUsuarioEstado_id(@p0);', req, res);
+});
+
+
 
 app.post('/persona/add', (req, res) => {
     let rep = req.body;
@@ -99,8 +198,9 @@ app.delete('/persona/delete/:id', (req, res) => {
 
 
 app.get('/actividad', (req, res) => {
-    select('select * from tbl_ms_parametro;', req, res);
+    select_one('select * from tbl_ms_parametro;', req, res);
 });
+
 app.get('/actividad/:id', (req, res) => {
     select_one('CALL ACT_SELECT_ID(?)', req, res);
 });
@@ -167,7 +267,7 @@ async function select_one(query, req, res) {
                     res.status(200).json(rows[0][0]);
                     console.log('get.query( \''+ query +'\' ), id(\'' + id + '\')');
                 } else {
-                    res.status(200).json([null]);
+                    res.status(200).json(rows[1][0]);
                 }
             } else {
                 res.status(500).json([null]);

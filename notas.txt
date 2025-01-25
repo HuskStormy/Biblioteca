@@ -43,3 +43,10 @@ CODIGO	=
 para iconos:
 	https://fontawesome.com/v4/icons/
 	https://icons.getbootstrap.com/					<- este es mejor
+
+
+
+
+
+rxju zdkw zolr ybtp
+php artisan make:mail TestMail
