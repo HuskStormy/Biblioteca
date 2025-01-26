@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Session;
 
+use App\Http\Middleware;
 use App\Http\Controllers\seguridad\LoginController;
 
 ///     Systema     ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -11,19 +12,19 @@ use App\Http\Controllers\seguridad\LoginController;
 
 
 
-Route::get('/Validacion',function () {   return view('login.validacion'); }); ///Ruta del login
+
 Route::get('/perfil',function () {  return view('login.perfil'); });
 
 
 
-Route::get('/',     function () {       return redirect('/index');   });            ///Ruta Index
-Route::get('/index',            [LoginController::class, 'ruta_index']);            //Ruta Index
+Route::get('/',     function () {       return redirect('/index');   })->middleware('middleware_dash');          ///Ruta Index
+Route::get('/index',            [LoginController::class, 'ruta_index'])->middleware('middleware_dash');            //Ruta Index
 
+Route::get('/Validacion/{token}',  [LoginController::class, 'ruta_Verificacion'])->name('verificacion.Link'); ///Ruta del login
 Route::get('/login',            [LoginController::class, 'ruta_login']);            ///Ruta del login
 Route::post('/login/ingresar',  [LoginController::class, 'Accion_Login']);          //form_login_ingresar
-Route::post('/login/Registrar', [LoginController::class, 'Accion_Registrarse']);    //form_login_registrase
+Route::post('/login/Registrar', [LoginController::class, 'Accion_Registrarses']);    //form_login_registrase
 Route::get('/login/Logout',     [LoginController::class, 'Accion_Logout']);         //form_login_deslogiarse
-Route::get('/Mail',             [LoginController::class, 'Get_Mail']);         //form_login_deslogiarse
 
 
 //Route::get('/login',     [LoginController::class, 'get_']);        //form_login_deslogiarse
@@ -35,9 +36,9 @@ Route::get('/backup',function () {   return view('login.backup'); }); ///Ruta de
 ///     MODULOS     ///////////////////////////////////////////////////////////////////////////////////////////////
 ///Seguridad
 //Usuarios
-Route::get('/table_usuarios',function () {              return view('Modulos.Seguridad.Usuarios.tabla_usuarios'); });
-Route::get('/table_usuariosPendietes',function () {     return view('Modulos.Seguridad.Usuarios.tabla_usuariosPendientes'); });
-Route::get('/form_agregarUsuario',function () {         return view('Modulos.Seguridad.Usuarios.form_agregarUsuarios'); });
+Route::get('/table_usuarios',function () {              return view('Modulos.Seguridad.Usuarios.tabla_usuarios'); })->middleware('middleware_dash');
+Route::get('/table_usuariosPendietes',function () {     return view('Modulos.Seguridad.Usuarios.tabla_usuariosPendientes'); })->middleware('middleware_dash');
+Route::get('/form_agregarUsuario',function () {         return view('Modulos.Seguridad.Usuarios.form_agregarUsuarios'); })->middleware('middleware_dash');
 //Seguridad
 Route::get('/table_bitacora',function () {              return view('Modulos.Seguridad.Seguridad.tabla_bitacora'); });
 Route::get('/table_parametros',function () {            return view('Modulos.Seguridad.Seguridad.tabla_parametros'); });

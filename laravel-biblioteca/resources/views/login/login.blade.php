@@ -109,7 +109,7 @@
         <p class="login-box-msg">Inicia sesión</p>
 
         @if(session('mensaje'))
-          <div class="alert alert-danger alert-dismissible">
+          <div class="alert alert-{{session('tipo')}} alert-dismissible">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
             {{session('mensaje')}}
           </div>
@@ -155,7 +155,7 @@
       </form>
 
       <!-- Register Form -->
-      <form action="/login/Registrar" id="registerForm" style="display: none;" method="POST">
+      <form action="{{url('/login/Registrar')}}" id="registerForm" style="display: none;" method="POST">
         @csrf
         <p class="login-box-msg">Regístrate</p>
 

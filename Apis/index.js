@@ -73,6 +73,10 @@ app.get('/usuario/:id', (req, res) => {
 app.get('/usuario/correo/:id', (req, res) => {
     select_one('call ProSeguridad_Select_TBLusuario_Correo(?)', req, res);
 });
+app.get('/usuario/t/:id', (req, res) => {
+    select_one('SET @p0=?; CALL `ProSeguridad_Select_TBLusuario_tkn`(@p0);', req, res);
+});
+
 app.post('/usuario/add', (req, res) => {
     let rep = req.body;
     
@@ -96,7 +100,7 @@ app.post('/usuario/add', (req, res) => {
         rep.p10   // intendos
     ], req, res);
 });
-app.put('/persona/modify', (req, res) => {
+app.put('/usuario/modify', (req, res) => {
     const {
         p_ID_USUARIO,
         p_ID_ESTADO_USUARIO,
@@ -129,6 +133,13 @@ app.put('/persona/modify', (req, res) => {
         ], 
     req, res);
 });
+app.put('/usuario/verific', (req, res) => {
+    const { P_ID, P_CODIGO } = req.body;
+    var query   =   "CALL ProSeguridad_Update_TBLusuario_Verificar(?, ?);";
+    Put(query,[ P_ID, P_CODIGO], req, res);
+});
+
+
 app.put('/persona/Intento/menos', (req, res) => {
     const {
         p0
@@ -144,7 +155,7 @@ app.put('/persona/Estado/Bloqueado', (req, res) => {
     const {
         p0
     } = req.body;
-    var query   =   "SET @p0 = ?; UPDATE `tbl_ms_usuario` SET `ID_ESTADO_USUARIO` = '4' WHERE `tbl_ms_usuario`.`ID_USUARIO` = @p0;";
+    var query   =   "SET @p0 = ?; UPDATE `tbl_ms_usuario` SET `ID_ESTADO_USUARIO` = '2' WHERE `tbl_ms_usuario`.`ID_USUARIO` = @p0;";
     Put(query, 
         [        
             p0
@@ -168,55 +179,18 @@ app.get('/parametro/:id', (req, res) => {
     select_one('CALL `ProSeguridad_Select_TBLparametro_id`(?);', req, res);
 });
 
-app.get('/Usu_Estad/:id', (req, res) => {
-    select_one('SET @p0=?; CALL ProSeguridad_Select_TBLUsuarioEstado_id(@p0);', req, res);
-});
-
-
-
-app.post('/persona/add', (req, res) => {
-    let rep = req.body;
-    var paramet =   "SET @p0=?; SET @p1=?; SET @p2=?; SET @p3=?; SET @p4=?; SET @p5=?;";
-    var query   =   "CALL `PR_INSERT_PERSONA`(@p0, @p1, @p2, @p3, @p4, @p5);";
-    Insert(query, paramet, [rep.p0, rep.p1, rep.p2, rep.p3, rep.p4, rep.p5], req, res);
-});
-app.put('/persona/modifi', (req, res) => {
-    const {
-        MyCodigo,PE_NOMBRE,PE_APELLIDO,PE_Empleado,PE_USUARIO,PE_CORREO,PE_CONTRA,PE_DESC,PE_PROF
-    } = req.body;
-    var query   =   " CALL `PRO_PERSO_ACTUALIZAR`(?, ?, ?, ?, ?, ?, ?, ?, ?);";
-    Put(query, [MyCodigo,PE_NOMBRE,PE_APELLIDO,PE_Empleado,PE_USUARIO,PE_CORREO,PE_CONTRA,PE_DESC,PE_PROF] , req, res);
-});
-app.delete('/persona/delete/:id', (req, res) => {
-    const { id }    = req.params;
-    var query       = "CALL PR_DELETE_PERSONA(?)";
-    Delete(query, [id], req, res);
+app.get('/estado/:id', (req, res) => {
+    select_one('CALL `ProSeguridad_Select_TBLUsuarioEstado_id`(?);', req, res);
 });
 
 
 
 
 
-app.get('/actividad', (req, res) => {
-    select_one('select * from tbl_ms_parametro;', req, res);
-});
 
-app.get('/actividad/:id', (req, res) => {
-    select_one('CALL ACT_SELECT_ID(?)', req, res);
-});
-app.post('/actividad/add', (req, res) => {
-    let rep = req.body;
-    var paramet =   "SET @p0=?; SET @p1=?; SET @p2=?;";
-    var query   =   "CALL ACT_INSERT(@p0, @p1, @p2);";
-    Insert(query, paramet, [rep.p0, rep.p1, rep.p2], req, res);
-});
-app.put('/actividad/modifi', (req, res) => {
-    const {
-        CODIGO,PER_TITULO,PER_DESCRIPCION,PER_EDAD
-    } = req.body;
-    var query   =   " CALL `ACT_UPDATE`(?, ?, ?, ?);";
-    Put(query, [CODIGO,PER_TITULO,PER_DESCRIPCION,PER_EDAD] , req, res);
-});
+
+
+
 app.delete('/actividad/delete/:id', (req, res) => {
     const { id }    = req.params;
     var query       = "CALL ACT_DELETE(?)";
@@ -263,11 +237,15 @@ async function select_one(query, req, res) {
     mysqlConnection.query(query, [id],
         (err, rows, fields) => {
             if (!err) {
-                if (rows[0].length > 0) {
+                val = rows.length - 2;
+                if (false/*rows.length > 0  && rows[0].length > 0*/) {
+                    // Si hay resultados, devolver el primer registro
                     res.status(200).json(rows[0][0]);
-                    console.log('get.query( \''+ query +'\' ), id(\'' + id + '\')');
+                    console.log('get.query( \'' + query + '\' ), id(\'' + id + '\')'+ "    " + [id]);
                 } else {
-                    res.status(200).json(rows[1][0]);
+                    // Si no hay resultados, devolver un mensaje adecuado
+                    //res.status(404).json(rows[0][0]);
+                    res.status(200).json(rows[val][0]);
                 }
             } else {
                 res.status(500).json([null]);
@@ -295,10 +273,12 @@ async function Put(query, CallVal, req, res) {
     mysqlConnection.query( query, CallVal,
         (err, rows, fields) => {
             if (!err) {
-                res.status(200).json(req.body);
-                console.log('put.query( \''+ query +'\' )');
+                //res.status(200).json(req.body);
+                res.send("Ingresado correctamente !!");
+                console.log('put.query( \''+ query +'\' )' + '   ' + CallVal);
             } else {
                 console.log(err);
+                res.send("error al ingresas");
             }
         }
     );
