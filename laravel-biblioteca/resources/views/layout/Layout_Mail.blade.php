@@ -1,4 +1,3 @@
-id: {{$id}}
 usuario: {{$usuario}}
 correo; {{$correo}}
 

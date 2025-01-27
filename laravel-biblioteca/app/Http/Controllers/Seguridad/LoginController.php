@@ -119,7 +119,7 @@ class LoginController
             "p3" => strtoupper($DatoForm['name']),  // Nombre Usuario
             "p4" => $hashedPassword,    // contrasena
             "p5" => $DatoForm['email'], // correo electrónico
-            "p6" => $DatoForm['DNI'],   // DNI
+            "p6" => $DatoForm['DNI'],   // DNI 
             "p7" => Carbon::today(),    // fecha_conexion_ultima
             "p8" => $token,             // cod primer ingreso
             "p9" => Carbon::today()->addDays($parametro_DiasVenc['VALOR']),          // fecha_vencimiento
